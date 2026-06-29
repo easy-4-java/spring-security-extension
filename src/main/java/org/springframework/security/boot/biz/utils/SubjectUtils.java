@@ -1,4 +1,4 @@
-package org.springframework.security.boot.utils;
+package org.springframework.security.boot.biz.utils;
 
 import org.apache.commons.collections4.MapUtils;
 import org.springframework.security.boot.biz.userdetails.SecurityPrincipal;

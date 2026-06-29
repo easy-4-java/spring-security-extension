@@ -21,7 +21,7 @@ import org.springframework.context.support.MessageSourceAccessor;
 import org.springframework.http.server.reactive.ServerHttpRequest;
 import org.springframework.http.server.reactive.ServerHttpResponse;
 import org.springframework.security.boot.biz.SpringSecurityBizMessageSource;
-import org.springframework.security.boot.utils.ReactiveSecurityResponseUtils;
+import org.springframework.security.boot.biz.utils.ReactiveSecurityResponseUtils;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.server.ServerAuthenticationEntryPoint;
 import org.springframework.util.CollectionUtils;

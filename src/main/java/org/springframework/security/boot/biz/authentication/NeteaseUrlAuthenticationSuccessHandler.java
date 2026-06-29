@@ -16,7 +16,7 @@
 package org.springframework.security.boot.biz.authentication;
 
 import org.springframework.security.boot.biz.filter.HttpParamsFilter;
-import org.springframework.security.boot.utils.StringUtils;
+import org.springframework.security.boot.biz.utils.StringUtils;
 import org.springframework.security.web.authentication.SimpleUrlAuthenticationSuccessHandler;
 
 import javax.servlet.http.HttpServletRequest;

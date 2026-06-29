@@ -6,7 +6,7 @@ import org.springframework.context.support.MessageSourceAccessor;
 import org.springframework.security.boot.biz.SpringSecurityBizMessageSource;
 import org.springframework.security.boot.biz.exception.AuthResponseCode;
 import org.springframework.security.boot.biz.exception.AuthenticationMethodNotSupportedException;
-import org.springframework.security.boot.utils.WebUtils;
+import org.springframework.security.boot.biz.utils.WebUtils;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.util.matcher.RequestMatcher;

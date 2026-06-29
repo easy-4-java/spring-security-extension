@@ -1,4 +1,4 @@
-package org.springframework.security.boot.utils;
+package org.springframework.security.boot.biz.utils;
 
 import com.alibaba.fastjson.JSONObject;
 import org.slf4j.Logger;

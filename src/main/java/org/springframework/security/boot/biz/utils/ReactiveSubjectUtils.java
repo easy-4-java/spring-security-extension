@@ -1,4 +1,4 @@
-package org.springframework.security.boot.utils;
+package org.springframework.security.boot.biz.utils;
 
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.ReactiveSecurityContextHolder;
