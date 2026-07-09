@@ -1,50 +1,31 @@
 # spring-security-extension
 
-Spring Security Extensions - independent of Spring Boot, fully compatible with JDK 1.8.
-
-## Features
-
-- **Authentication**: POST-based JSON authentication filter, authentication providers, success/failure handlers
-- **Captcha**: Captcha resolver interface with session-based and null implementations
-- **Session Management**: Concurrent session control, Redis-backed session registry
-- **Exception Handling**: Structured auth response codes and i18n error messages
-- **Reactive (WebFlux)**: Entry points, success/failure handlers, JWT web filter for reactive applications
-- **Security Headers**: CORS, CSRF, HSTS, Content-Security-Policy and more
-- **Utilities**: Security response helpers, subject utilities, web security configuration helpers
-
-## Requirements
-
-- JDK 1.8+
-- Spring Security 5.7.x
+基于 Spring Security 官方组件的纯 Java 扩展层，不包含 Spring Boot 自动配置。
 
 ## Maven
 
 ```xml
 <dependency>
-    <groupId>io.github.hiwepy</groupId>
-    <artifactId>spring-security-extension</artifactId>
-    <version>1.0.x-SNAPSHOT</version>
+  <groupId>io.github.hiwepy</groupId>
+  <artifactId>spring-security-extension</artifactId>
+  <version>2.0.x-SNAPSHOT</version>
 </dependency>
 ```
 
-## Package Structure
+## 版本线
 
-```
-org.springframework.security.boot
-├── biz/
-│   ├── authentication/       # Authentication filters, providers, handlers
-│   │   ├── captcha/          # Captcha support
-│   │   ├── nested/           # Matched entry points and handlers (Servlet)
-│   │   └── server/           # Reactive (WebFlux) handlers
-│   ├── exception/            # Auth exceptions and response models
-│   ├── filter/               # CORS and HTTP params filters
-│   ├── property/             # Configuration properties (POJOs)
-│   │   └── header/           # Security header properties
-│   ├── session/              # Session management
-│   └── userdetails/          # User details and JWT support
-└── utils/                    # Security and web utilities
-```
+| 分支 | 版本前缀 | JDK | 说明 |
+|------|----------|-----|------|
+| `feature/1.0.x` | `1.0.x.*` | 8 | 对齐 Boot 2.x / Spring Security 5.x |
+| `feature/2.0.x` | `2.0.x.*` | 17 | 对齐 Boot 3.x / Spring Security 6.x |
+| `feature/3.0.x` | `3.0.x.*` | 21 | 对齐 Boot 4.x / Spring Security 7.x |
+
+## 模块边界
+
+- 保留认证、会话、异常、响应、工具类、Reactive 适配等纯 Java 扩展
+- 不依赖 `spring-boot-starter-*`
+- 如需 Redis 相关 API，仅依赖 `spring-data-redis` 基础库，不引入 Spring Boot Starter
 
 ## License
 
-[Apache License 2.0](LICENSE)
+Apache License 2.0

@@ -18,7 +18,7 @@ package org.springframework.security.boot.biz.property;
 import lombok.Data;
 import org.springframework.security.config.http.SessionCreationPolicy;
 
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletResponse;
 
 /**
  * Security Session Mgt Properties

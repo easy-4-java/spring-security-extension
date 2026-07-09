@@ -9,9 +9,9 @@ import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 import org.springframework.web.context.request.ServletWebRequest;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 import java.math.BigDecimal;
 import java.util.Enumeration;
 import java.util.LinkedHashMap;
@@ -226,8 +226,8 @@ public class SubjectUtils {
 	/**
 	 * 登陆成功后重新生成session【基于安全考虑】
 	 * @param request {@link HttpServletRequest} instance
-	 * @param oldSession Old {@link javax.servlet.http.HttpSession} instance
-	 * @return {@link javax.servlet.http.HttpSession} instance
+	 * @param oldSession Old {@link jakarta.servlet.http.HttpSession} instance
+	 * @return {@link jakarta.servlet.http.HttpSession} instance
 	 */
 	public static HttpSession copySession(HttpServletRequest request, HttpSession oldSession) {
 		Map<String, Object> attributes = new LinkedHashMap<String, Object>();
