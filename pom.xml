@@ -55,7 +55,7 @@ tt<maven.compiler.release>${java.version}</maven.compiler.release>
         <fastjson2.version>2.0.52</fastjson2.version>
         <jwt-issuer.version>1.1.8.RELEASE</jwt-issuer.version>
         <spring-biz.version>1.1.4.RELEASE</spring-biz.version>
-        <jackson.version>2.22.0</jackson.version>
+        <jackson.version>2.18.9</jackson.version>
         <swagger-annotations.version>2.1.12</swagger-annotations.version>
         <servlet-api.version>6.1.0</servlet-api.version>
         <slf4j.version>2.0.18</slf4j.version>
