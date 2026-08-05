@@ -121,12 +121,6 @@
                 <version>${fastjson2.version}</version>
             </dependency>
         <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>4.0.1</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
             <groupId>io.github.easy4j</groupId>
             <artifactId>jwt-issuer-api</artifactId>
             <version>3.0.x.20260630-SNAPSHOT</version>
@@ -238,12 +232,6 @@
             <scope>provided</scope>
         </dependency>
 
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>4.0.1</version>
-            <scope>provided</scope>
-        </dependency>
         <dependency>
             <groupId>io.github.easy4j</groupId>
             <artifactId>jwt-issuer-api</artifactId>
