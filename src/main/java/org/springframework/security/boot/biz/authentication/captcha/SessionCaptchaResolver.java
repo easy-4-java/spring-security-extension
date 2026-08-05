@@ -18,8 +18,8 @@ package org.springframework.security.boot.biz.authentication.captcha;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.web.util.WebUtils;
 
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.util.Date;
 
 /**
