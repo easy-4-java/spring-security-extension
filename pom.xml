@@ -129,7 +129,7 @@
         <dependency>
             <groupId>io.github.easy4j</groupId>
             <artifactId>jwt-issuer-api</artifactId>
-            <version>1.1.8.RELEASE</version>
+            <version>3.0.x.20260630-SNAPSHOT</version>
         </dependency>
         </dependencies>
     </dependencyManagement>
@@ -247,7 +247,7 @@
         <dependency>
             <groupId>io.github.easy4j</groupId>
             <artifactId>jwt-issuer-api</artifactId>
-            <version>1.1.8.RELEASE</version>
+            <version>3.0.x.20260630-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
