@@ -126,6 +126,11 @@
             <version>4.0.1</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>io.github.easy4j</groupId>
+            <artifactId>jwt-issuer-api</artifactId>
+            <version>1.1.8.RELEASE</version>
+        </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -238,6 +243,11 @@
             <artifactId>javax.servlet-api</artifactId>
             <version>4.0.1</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.github.easy4j</groupId>
+            <artifactId>jwt-issuer-api</artifactId>
+            <version>1.1.8.RELEASE</version>
         </dependency>
     </dependencies>
 
