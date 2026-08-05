@@ -20,7 +20,7 @@ import lombok.Setter;
 import lombok.ToString;
 import org.springframework.security.web.util.matcher.RequestMatcher;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 
 /**
  * Security Header Csrf Properties
