@@ -15,7 +15,7 @@
  */
 package org.springframework.security.boot.biz.userdetails;
 
-import io.github.easy4j.jwt.JwtPayload;
+import java.util.HashMap;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -90,7 +90,7 @@ public class UserProfilePayload {
 	 * User Roles
 	 */
 	@ApiModelProperty(name = "roles", dataType = "java.util.Set<String>", value = "用户角色信息")
-	private List<JwtPayload.RolePair> roles = new ArrayList<>();
+	private List<Object> roles = new ArrayList<>();
     /**
 	 * 用户权限标记列表
 	 */
