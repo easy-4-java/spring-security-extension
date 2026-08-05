@@ -53,7 +53,6 @@
         <commons-collections4.version>4.4</commons-collections4.version>
         <commons-io.version>2.16.1</commons-io.version>
         <fastjson2.version>2.0.52</fastjson2.version>
-        <jwt-issuer.version>1.1.8.RELEASE</jwt-issuer.version>
         <jackson.version>2.22.1</jackson.version>
         <swagger-annotations.version>1.6.4</swagger-annotations.version>
         <servlet-api.version>6.1.0</servlet-api.version>
@@ -121,12 +120,6 @@
                 <artifactId>fastjson2</artifactId>
                 <version>${fastjson2.version}</version>
             </dependency>
-            <!-- jwt-issuer-api -->
-            <dependency>
-                <groupId>io.github.easy4j</groupId>
-                <artifactId>jwt-issuer-api</artifactId>
-                <version>${jwt-issuer.version}</version>
-            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -181,10 +174,6 @@
         </dependency>
 
         <!-- hiwepy libs -->
-        <dependency>
-            <groupId>io.github.easy4j</groupId>
-            <artifactId>jwt-issuer-api</artifactId>
-        </dependency>
 
         <!-- Commons -->
         <dependency>
