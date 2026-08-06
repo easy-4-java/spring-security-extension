@@ -52,7 +52,7 @@
         <commons-collections4.version>4.4</commons-collections4.version>
         <commons-io.version>2.22.0</commons-io.version>
         <fastjson2.version>2.0.52</fastjson2.version>
-        <jwt-issuer.version>3.0.x.20260630-SNAPSHOT</jwt-issuer.version>
+        <easy4j-jwt-issuer.version>2.0.x.20260630-SNAPSHOT</easy4j-jwt-issuer.version>
         <jackson.version>2.17.2</jackson.version>
         <swagger-annotations.version>1.6.14</swagger-annotations.version>
         <servlet-api.version>6.1.0</servlet-api.version>
@@ -126,7 +126,7 @@
             <dependency>
                 <groupId>io.github.easy4j</groupId>
                 <artifactId>jwt-issuer-api</artifactId>
-                <version>${jwt-issuer.version}</version>
+                <version>${easy4j-jwt-issuer.version}</version>
             </dependency>
             <!-- For Spring Security -->
             <dependency>
