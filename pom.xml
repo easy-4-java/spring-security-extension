@@ -73,7 +73,10 @@
         <maven-source-plugin.version>3.4.0</maven-source-plugin.version>
         <maven-central-publishing-plugin.version>0.11.0</maven-central-publishing-plugin.version>
         <jacoco-maven-plugin.version>0.8.15</jacoco-maven-plugin.version>
-    </properties>
+    
+		<spring-framework.version>6.2.6</spring-framework.version>
+		<easy4j-jwt-issuer.version>3.0.x.20260630-SNAPSHOT</easy4j-jwt-issuer.version>
+		<spring-boot-starter-data-redis.version>3.4.5</spring-boot-starter-data-redis.version></properties>
 
     <!-- 依赖版本统一管理（dependencyManagement） -->
     <dependencyManagement>
@@ -90,7 +93,7 @@
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-framework-bom</artifactId>
-                <version>6.2.6</version>
+                <version>${spring-framework.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -124,7 +127,7 @@
             <dependency>
                 <groupId>io.github.easy4j</groupId>
                 <artifactId>jwt-issuer-api</artifactId>
-                <version>3.0.x.20260630-SNAPSHOT</version>
+                <version>${easy4j-jwt-issuer.version}</version>
             </dependency>
             <!-- For Spring Security -->
             <dependency>
@@ -172,7 +175,7 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-data-redis</artifactId>
-                <version>3.4.5</version>
+                <version>${spring-boot-starter-data-redis.version}</version>
                 <scope>provided</scope>
             </dependency>
             <!-- For Commons Lang3 -->
