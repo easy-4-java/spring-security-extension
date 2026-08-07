@@ -4,6 +4,8 @@
 
 [![Java](https://img.shields.io/badge/Java-8-orange)](https://github.com/easy-4-java/spring-security-extension) [![License](https://img.shields.io/badge/license-Apache%202.0-green)](./LICENSE)
 
+spring-security-extension 是一组独立于 Spring Boot、完全兼容 JDK 1.8 的 Spring Security 扩展。
+
 ## 目录
 
 - [1. Project Overview](#1-project-overview)

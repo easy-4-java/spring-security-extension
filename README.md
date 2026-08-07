@@ -4,6 +4,8 @@
 
 [![Java](https://img.shields.io/badge/Java-8-orange)](https://github.com/easy-4-java/spring-security-extension) [![License](https://img.shields.io/badge/license-Apache%202.0-green)](./LICENSE)
 
+spring-security-extension is a set of Spring Security extensions that is independent of Spring Boot and fully compatible with JDK 1.8
+
 ## Table of Contents
 
 - [1. Project Overview](#1-project-overview)
