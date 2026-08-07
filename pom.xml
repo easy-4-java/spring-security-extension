@@ -47,14 +47,14 @@
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <spring-security.version>6.4.4</spring-security.version>
+        <spring-security.version>6.5.10</spring-security.version>
         <spring-data-redis.version>3.4.5</spring-data-redis.version>
         <commons-lang3.version>3.20.0</commons-lang3.version>
         <commons-collections4.version>4.4</commons-collections4.version>
         <commons-io.version>2.22.0</commons-io.version>
         <fastjson2.version>2.0.52</fastjson2.version>
         <easy4j-jwt-issuer.version>2.0.x.20260630-SNAPSHOT</easy4j-jwt-issuer.version>
-        <jackson.version>2.17.2</jackson.version>
+        <jackson.version>2.18.9</jackson.version>
         <swagger-annotations.version>1.6.14</swagger-annotations.version>
         <servlet-api.version>6.1.0</servlet-api.version>
         <slf4j.version>2.0.18</slf4j.version>
@@ -76,7 +76,7 @@
         <maven-central-publishing-plugin.version>0.11.0</maven-central-publishing-plugin.version>
         <maven-jacoco-plugin.version>0.8.15</maven-jacoco-plugin.version>
     
-		<spring-framework.version>6.2.6</spring-framework.version></properties>
+		<spring-framework.version>6.2.19</spring-framework.version></properties>
 
     <!-- 依赖版本统一管理（dependencyManagement） -->
     <dependencyManagement>
