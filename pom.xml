@@ -40,7 +40,8 @@
 
     <!-- 版本属性定义：Java 版本、依赖版本与 Maven 插件版本统一管理 -->
     <properties>
-        <central-publishing-maven-plugin.version>0.11.0</central-publishing-maven-plugin.version>
+                <junit-jupiter.version>6.1.0</junit-jupiter.version>
+<central-publishing-maven-plugin.version>0.11.0</central-publishing-maven-plugin.version>
         <java.version>17</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
@@ -132,42 +133,50 @@
             <dependency>
                 <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-core</artifactId>
+                <version>${spring-security.version}</version>
             </dependency>
             <!-- For Spring Security -->
             <dependency>
                 <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-config</artifactId>
+                <version>${spring-security.version}</version>
             </dependency>
             <!-- For Spring Security -->
             <dependency>
                 <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-web</artifactId>
+                <version>${spring-security.version}</version>
             </dependency>
             <!-- For Spring Security -->
             <dependency>
                 <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-crypto</artifactId>
+                <version>${spring-security.version}</version>
             </dependency>
             <!-- For Spring Security -->
             <dependency>
                 <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-messaging</artifactId>
+                <version>${spring-security.version}</version>
             </dependency>
             <!-- For Spring Security -->
             <dependency>
                 <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-aspects</artifactId>
+                <version>${spring-security.version}</version>
             </dependency>
             <!-- For Spring Framework -->
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-webmvc</artifactId>
+                <version>${spring-framework.version}</version>
                 <scope>provided</scope>
             </dependency>
             <!-- For Spring Framework -->
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-webflux</artifactId>
+                <version>${spring-framework.version}</version>
                 <scope>provided</scope>
             </dependency>
             <!-- For Spring Data -->
@@ -187,6 +196,7 @@
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-databind</artifactId>
+                <version>${jackson.version}</version>
             </dependency>
             <!-- For Swagger -->
             <dependency>
