@@ -3,15 +3,15 @@ package org.springframework.security.boot.biz.authentication;
 import org.springframework.context.support.MessageSourceAccessor;
 import org.springframework.security.boot.biz.SpringSecurityBizMessageSource;
 import org.springframework.security.boot.biz.authentication.nested.MatchedAuthenticationSuccessHandler;
-import org.springframework.security.boot.utils.SecurityResponseUtils;
-import org.springframework.security.boot.utils.WebUtils;
+import org.springframework.security.boot.biz.utils.SecurityResponseUtils;
+import org.springframework.security.boot.biz.utils.WebUtils;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.web.authentication.SavedRequestAwareAuthenticationSuccessHandler;
 import org.springframework.util.CollectionUtils;
 
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 

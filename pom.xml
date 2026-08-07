@@ -273,8 +273,8 @@
         </dependency>
         <!-- For Spring Boot -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-redis</artifactId>
             <scope>provided</scope>
         </dependency>
         <!-- For Commons Collections4 -->
@@ -607,7 +607,9 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${maven-compiler-plugin.version}</version>
                 <configuration>
+                    <!-- 源代码编译版本 -->
                     <source>${java.version}</source>
+                    <!-- 目标平台编译版本 -->
                     <target>${java.version}</target>
                     <!-- 保留方法参数名，支持 Spring MVC 按参数名绑定 -->
                     <parameters>true</parameters>

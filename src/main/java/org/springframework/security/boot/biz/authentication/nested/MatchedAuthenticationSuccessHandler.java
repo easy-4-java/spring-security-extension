@@ -15,12 +15,12 @@
  */
 package org.springframework.security.boot.biz.authentication.nested;
 
-import org.springframework.security.boot.utils.SecurityResponseUtils;
+import org.springframework.security.boot.biz.utils.SecurityResponseUtils;
 import org.springframework.security.core.Authentication;
 
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**

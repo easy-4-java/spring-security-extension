@@ -20,7 +20,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.http.server.reactive.ServerHttpRequest;
 import org.springframework.http.server.reactive.ServerHttpResponse;
-import org.springframework.security.boot.utils.ReactiveSecurityResponseUtils;
+import org.springframework.security.boot.biz.utils.ReactiveSecurityResponseUtils;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.server.WebFilterExchange;
 import reactor.core.publisher.Mono;
