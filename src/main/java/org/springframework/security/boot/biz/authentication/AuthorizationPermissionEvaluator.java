@@ -17,7 +17,7 @@ package org.springframework.security.boot.biz.authentication;
 
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.security.access.PermissionEvaluator;
-import org.springframework.security.boot.utils.SubjectUtils;
+import org.springframework.security.boot.biz.utils.SubjectUtils;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 

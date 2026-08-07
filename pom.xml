@@ -274,8 +274,8 @@
         </dependency>
         <!-- For Spring Boot -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-redis</artifactId>
             <scope>provided</scope>
         </dependency>
         <!-- For Commons Collections4 -->
