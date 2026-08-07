@@ -15,7 +15,7 @@
  */
 package org.springframework.security.boot.biz.authentication.nested;
 
-import org.springframework.security.boot.utils.SecurityResponseUtils;
+import org.springframework.security.boot.biz.utils.SecurityResponseUtils;
 import org.springframework.security.core.Authentication;
 
 import jakarta.servlet.ServletException;

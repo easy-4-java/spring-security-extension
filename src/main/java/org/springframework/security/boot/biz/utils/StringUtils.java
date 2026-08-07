@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package org.springframework.security.boot.utils;
+package org.springframework.security.boot.biz.utils;
 
 /**
  * Spring StringUtils 扩展
