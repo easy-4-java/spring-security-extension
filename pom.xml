@@ -134,42 +134,50 @@
             <dependency>
                 <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-core</artifactId>
+                <version>${spring-security.version}</version>
             </dependency>
             <!-- For Spring Security -->
             <dependency>
                 <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-config</artifactId>
+                <version>${spring-security.version}</version>
             </dependency>
             <!-- For Spring Security -->
             <dependency>
                 <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-web</artifactId>
+                <version>${spring-security.version}</version>
             </dependency>
             <!-- For Spring Security -->
             <dependency>
                 <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-crypto</artifactId>
+                <version>${spring-security.version}</version>
             </dependency>
             <!-- For Spring Security -->
             <dependency>
                 <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-messaging</artifactId>
+                <version>${spring-security.version}</version>
             </dependency>
             <!-- For Spring Security -->
             <dependency>
                 <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-aspects</artifactId>
+                <version>${spring-security.version}</version>
             </dependency>
             <!-- For Spring Framework -->
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-webmvc</artifactId>
+                <version>${spring-framework.version}</version>
                 <scope>provided</scope>
             </dependency>
             <!-- For Spring Framework -->
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-webflux</artifactId>
+                <version>${spring-framework.version}</version>
                 <scope>provided</scope>
             </dependency>
             <!-- For Spring Boot -->
@@ -189,6 +197,7 @@
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-databind</artifactId>
+                <version>${jackson.version}</version>
             </dependency>
             <!-- For Swagger -->
             <dependency>
