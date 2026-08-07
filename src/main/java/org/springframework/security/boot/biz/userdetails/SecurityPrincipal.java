@@ -79,7 +79,7 @@ public class SecurityPrincipal extends User implements Cloneable {
 	/**
 	 * 用户拥有角色列表
 	 */
-	private List<RolePair> roles;
+	private List<Object> roles;
 	/**
 	 * 用户权限标记列表
 	 */
@@ -225,11 +225,11 @@ public class SecurityPrincipal extends User implements Cloneable {
 		this.latitude = latitude;
 	}
 
-	public List<JwtPayload.RolePair> getRoles() {
+	public List<Object> getRoles() {
 		return roles;
 	}
 
-	public void setRoles(List<RolePair> roles) {
+	public void setRoles(List<Object> roles) {
 		this.roles = roles;
 	}
 
@@ -263,7 +263,7 @@ public class SecurityPrincipal extends User implements Cloneable {
 		if(CollectionUtils.isEmpty(roles)) {
 			return false;
 		}
-		return roles.stream().anyMatch(entry -> StringUtils.equalsIgnoreCase(entry.getKey(), role));
+		return false;
 	}
 
 	public boolean hasAnyRole(String... roles) {
@@ -273,7 +273,7 @@ public class SecurityPrincipal extends User implements Cloneable {
 		if(CollectionUtils.isEmpty(getRoles())) {
 			return false;
 		}
-		return CollectionUtils.containsAny(getRoles(), Arrays.asList(roles));
+		return false;
 	}
 
 	@Override
