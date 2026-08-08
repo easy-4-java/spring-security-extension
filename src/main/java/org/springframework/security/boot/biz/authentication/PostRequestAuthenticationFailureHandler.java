@@ -16,8 +16,15 @@ import java.io.IOException;
 import java.util.List;
 
 /**
- * Post Request Authentication Failure Handler
+ * Authentication failure handler that supports both REST (JSON response) and browser-based
+ * (redirect) failure scenarios. Notifies registered listeners and delegates to matched
+ * {@link org.springframework.security.boot.biz.authentication.nested.MatchedAuthenticationFailureHandler}
+ * instances for REST requests.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see org.springframework.security.web.authentication.ExceptionMappingAuthenticationFailureHandler
+ * @see AuthenticationListener
  */
 public class PostRequestAuthenticationFailureHandler extends ExceptionMappingAuthenticationFailureHandler {
 

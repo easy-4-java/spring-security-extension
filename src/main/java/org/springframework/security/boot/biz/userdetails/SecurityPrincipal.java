@@ -1,7 +1,7 @@
 package org.springframework.security.boot.biz.userdetails;
 
-import java.util.HashMap;
-import java.util.List;
+import io.github.easy4j.jwt.JwtPayload;
+import io.github.easy4j.jwt.JwtPayload.RolePair;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.security.authentication.InsufficientAuthenticationException;
 import org.springframework.security.core.GrantedAuthority;
@@ -16,78 +16,33 @@ import java.util.stream.Collectors;
  * @author [@Loong Wan](https://github.com/loong10k)
  */
 @SuppressWarnings("serial")
+/**
+ * Extended principal object that carries additional security metadata for authenticated users.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ */
 public class SecurityPrincipal extends User implements Cloneable {
 
 	protected static final String ADMIN_STRING = "admin";
 
-	/**
-	 * 用户ID（用户来源表Id）
-	 */
-	private String uid;
-	/**
-	 * 用户UID（用户编号）
-	 */
-	private String uuid;
-	/**
-	 * 用户Key（用户编号）
-	 */
-	private String ukey;
-	/**
-	 * 用户Code（内部工号）
-	 */
-	private String ucode;
-	/**
-	 * 角色ID（角色表Id）
-	 */
-	private String rid;
-	/**
-	 * 角色Key：角色业务表中的唯一ID
-	 */
-	private String rkey;
-	/**
-	 * 角色Code：角色业务表中的唯一编码
-	 */
-	private String rcode;
-	/**
-   	 * 用户是否绑定信息
-   	 */
-    private boolean bound = Boolean.FALSE;
-    /**
-   	 * 用户是否完善信息
-   	 */
-    private boolean initial = Boolean.FALSE;
-	/**
-	 * 用户是否需要多因子验证
-	 */
-	private boolean verify = Boolean.FALSE;
-    /**
-	 * 请求参数签名（可选）
-	 */
-	private String sign;
-	/**
-	 * 授权方式（可选）
-	 */
-	private String authType;
-	/**
-	 * 用户最新经度（可选）
-	 */
-	private double longitude;
-	/**
-	 * 用户最新纬度（可选）
-	 */
-	private double latitude;
-	/**
-	 * 用户拥有角色列表
-	 */
-	private List<Object> roles;
-	/**
-	 * 用户权限标记列表
-	 */
-	private Set<String> perms = new HashSet<>();
-	/**
-	 * 用户数据
-	 */
-	private Map<String, Object> profile = new HashMap<String, Object>();
+		private String uid;
+		private String uuid;
+		private String ukey;
+		private String ucode;
+		private String rid;
+		private String rkey;
+		private String rcode;
+	    private boolean bound = Boolean.FALSE;
+        private boolean initial = Boolean.FALSE;
+		private boolean verify = Boolean.FALSE;
+    	private String sign;
+		private String authType;
+		private double longitude;
+		private double latitude;
+		private List<Object> roles;
+		private Set<String> perms = new HashSet<>();
+		private Map<String, Object> profile = new HashMap<String, Object>();
 
 	public SecurityPrincipal(String username, String password, String... roles) {
 		super(username, password, roleAuthorities(Arrays.asList(roles)));

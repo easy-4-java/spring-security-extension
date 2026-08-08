@@ -26,8 +26,13 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * TODO
+ * An {@link org.springframework.security.web.session.InvalidSessionStrategy} that writes a JSON
+ * error response when an invalid session is detected, instead of redirecting to a URL.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see org.springframework.security.web.session.InvalidSessionStrategy
+ * @see org.springframework.security.boot.biz.exception.AuthResponse
  */
 public class JsonInvalidSessionStrategy implements InvalidSessionStrategy {
 

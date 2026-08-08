@@ -28,6 +28,12 @@ import org.springframework.security.boot.biz.authentication.PostRequestAuthentic
 @Getter
 @Setter
 @ToString
+/**
+ * Configuration properties for authentication failure retry limits.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ */
 public class SecurityFailureRetryProperties {
 
 	private String retryTimesKeyParameter = AuthenticatingFailureCounter.DEFAULT_RETRY_TIMES_KEY_PARAM_NAME;

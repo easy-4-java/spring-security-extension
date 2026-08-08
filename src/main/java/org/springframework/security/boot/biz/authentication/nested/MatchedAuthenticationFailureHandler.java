@@ -24,8 +24,13 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * TODO
+ * Strategy interface for authentication failure handlers that handle specific types of
+ * authentication exceptions. Implementations declare which exceptions they support
+ * and provide custom failure handling logic.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see DefaultMatchedAuthenticationFailureHandler
  */
 public interface MatchedAuthenticationFailureHandler {
 

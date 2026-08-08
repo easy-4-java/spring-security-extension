@@ -20,6 +20,13 @@ package org.springframework.security.boot.biz.exception;
  * @author [@Loong Wan](https://github.com/loong10k)
  */
 @SuppressWarnings("serial")
+/**
+ * Exception thrown when a required authentication token is not found.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see org.springframework.security.core.AuthenticationException
+ */
 public class AuthenticationTokenNotFoundException extends AuthenticationExceptionAdapter {
 	// ~ Constructors
 	// ===================================================================================================

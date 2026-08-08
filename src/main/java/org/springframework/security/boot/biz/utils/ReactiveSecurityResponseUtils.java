@@ -24,6 +24,12 @@ import reactor.core.publisher.Mono;
 import java.nio.charset.StandardCharsets;
 import java.util.Objects;
 
+/**
+ * Utility class for writing security-related JSON responses in reactive (WebFlux) applications.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ */
 public class ReactiveSecurityResponseUtils {
 
 	protected static Logger logger = LoggerFactory.getLogger(ReactiveSecurityResponseUtils.class);

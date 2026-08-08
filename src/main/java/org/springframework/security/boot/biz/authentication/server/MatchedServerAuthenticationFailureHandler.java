@@ -26,8 +26,12 @@ import org.springframework.security.web.server.WebFilterExchange;
 import reactor.core.publisher.Mono;
 
 /**
- * TODO
+ * Strategy interface for server authentication failure handlers in reactive applications
+ * that handle specific types of authentication exceptions.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see DefaultMatchedServerAuthenticationFailureHandler
  */
 public interface MatchedServerAuthenticationFailureHandler {
 

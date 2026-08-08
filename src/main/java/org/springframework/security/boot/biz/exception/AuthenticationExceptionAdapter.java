@@ -3,6 +3,13 @@ package org.springframework.security.boot.biz.exception;
 import org.springframework.security.core.AuthenticationException;
 
 @SuppressWarnings("serial")
+/**
+ * Adapter class for authentication exceptions that carries an API response code.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see org.springframework.security.core.AuthenticationException
+ */
 public abstract class AuthenticationExceptionAdapter extends AuthenticationException {
 
 	private final int code;

@@ -24,6 +24,12 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.Objects;
 
+/**
+ * Utility class for writing security-related JSON responses (success and error) to servlet responses.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ */
 public class SecurityResponseUtils {
 
 	protected static Logger logger = LoggerFactory.getLogger(SecurityResponseUtils.class);

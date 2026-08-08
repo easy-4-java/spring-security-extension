@@ -28,6 +28,12 @@ import java.util.*;
 @Getter
 @Setter
 @ToString
+/**
+ * Configuration properties for redirect behavior.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ */
 public class SecurityRedirectProperties {
 
 	/**

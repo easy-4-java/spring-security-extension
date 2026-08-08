@@ -22,8 +22,11 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 /**
- * An {@code AuthenticationListener} listens for notifications while authenticate with the system.
+ * Listener interface for authentication lifecycle events. Implementations are notified
+ * when an authentication attempt succeeds or fails.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
  */
 public interface AuthenticationListener {
 

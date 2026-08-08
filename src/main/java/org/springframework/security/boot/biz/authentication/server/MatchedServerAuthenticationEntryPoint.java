@@ -23,8 +23,12 @@ import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
 
 /**
- * TODO
+ * Strategy interface for server authentication entry points in reactive applications
+ * that handle specific types of authentication exceptions.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see DefaultMatchedServerAuthenticationEntryPoint
  */
 public interface MatchedServerAuthenticationEntryPoint {
 	

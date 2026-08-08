@@ -19,8 +19,10 @@ import org.springframework.security.authentication.ReactiveAuthenticationManager
 import org.springframework.security.web.server.authentication.AuthenticationWebFilter;
 
 /**
- * 1、JWT Authentication Filter For Reactive  （负责请求拦截）
+ * Web filter for JWT-based authentication in reactive (WebFlux) applications.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
  */
 public class JwtAuthenticationWebFilter extends AuthenticationWebFilter {
 

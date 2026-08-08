@@ -5,8 +5,12 @@ import org.springframework.security.boot.biz.utils.SubjectUtils;
 import org.springframework.security.core.AuthenticationException;
 
 /**
- * Post认证请求失败后的处理实现
+ * Default implementation of {@link MatchedServerAuthenticationFailureHandler} for reactive
+ * (WebFlux) applications. Supports common authentication exceptions.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see MatchedServerAuthenticationFailureHandler
  */
 public class DefaultMatchedServerAuthenticationFailureHandler  implements MatchedServerAuthenticationFailureHandler {
 

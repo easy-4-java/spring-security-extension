@@ -27,9 +27,14 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * 
- * 账号、密码、验证码认证过滤器
+ * Concrete authentication processing filter for username/password/captcha authentication.
+ * Supports both JSON (REST) and form-encoded request bodies. Includes captcha validation,
+ * retry limit checking, and failure counting.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see PostOnlyAuthenticationProcessingFilter
+ * @see PostLoginRequest
  */
 public class PostRequestAuthenticationProcessingFilter extends PostOnlyAuthenticationProcessingFilter {
 

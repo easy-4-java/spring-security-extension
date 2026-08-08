@@ -5,6 +5,13 @@ package org.springframework.security.boot.biz.exception;
  * @author [@Loong Wan](https://github.com/loong10k)
  */
 @SuppressWarnings("serial")
+/**
+ * Exception thrown when an authentication token has expired.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see org.springframework.security.core.AuthenticationException
+ */
 public class AuthenticationTokenExpiredException extends AuthenticationExceptionAdapter {
 
 	// ~ Constructors

@@ -16,8 +16,10 @@
 package org.springframework.security.boot.biz.property;
 
 /**
- * Security Request Properties
+ * Configuration properties for request-level security settings.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
  */
 public class SecurityRequestProperties {
 

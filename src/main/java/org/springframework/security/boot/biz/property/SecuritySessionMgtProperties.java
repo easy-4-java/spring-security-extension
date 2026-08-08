@@ -25,6 +25,12 @@ import jakarta.servlet.http.HttpServletResponse;
  * @author [@Loong Wan](https://github.com/loong10k)
  */
 @Data
+/**
+ * Configuration properties for session management.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ */
 public class SecuritySessionMgtProperties {
 
 	public static final String PREFIX = "spring.security.session";
