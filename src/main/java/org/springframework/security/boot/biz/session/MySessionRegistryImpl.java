@@ -30,6 +30,12 @@ import java.util.concurrent.CopyOnWriteArraySet;
 
 @Slf4j
 @SuppressWarnings("unchecked")
+/**
+ * Custom implementation of the session registry for tracking active sessions.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ */
 public class MySessionRegistryImpl implements SessionRegistry, ApplicationListener<SessionDestroyedEvent> {
 
     private static final String SESSIONIDS = "sessionIds";

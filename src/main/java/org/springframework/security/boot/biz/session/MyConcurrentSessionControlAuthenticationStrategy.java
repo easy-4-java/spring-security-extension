@@ -31,6 +31,12 @@ import jakarta.servlet.http.HttpSession;
 import java.util.Iterator;
 import java.util.List;
 
+/**
+ * Custom implementation of concurrent session control that limits the number of sessions per principal.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ */
 public class MyConcurrentSessionControlAuthenticationStrategy extends ConcurrentSessionControlAuthenticationStrategy {
 
     protected MessageSourceAccessor messages = SpringSecurityMessageSource.getAccessor();

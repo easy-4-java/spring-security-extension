@@ -23,8 +23,13 @@ import jakarta.servlet.ServletResponse;
 import jakarta.servlet.http.HttpServletRequest;
 
 /**
- * Authenticating Failure Counter On Request
+ * An {@link AuthenticatingFailureCounter} implementation that reads the failure count
+ * from an HTTP request parameter. The {@code increment()} method is a no-op since
+ * the count is managed client-side via request parameters.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see AuthenticatingFailureCounter
  */
 public class AuthenticatingFailureRequestCounter implements AuthenticatingFailureCounter {
 

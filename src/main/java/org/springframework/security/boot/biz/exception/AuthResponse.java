@@ -4,28 +4,18 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Auth response for interacting with client.
- * 
+ * Generic authentication response wrapper that encapsulates API response codes and messages.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see org.springframework.security.core.AuthenticationException
  */
 public class AuthResponse<T> {
 
-	/**
-	 * 成功或异常编码
-	 */
-	private final int code;
-	/**
-	 * 旧接口成功、失败或异常辅助判断标记:success、fail、error
-	 */
-	private final String status;
-	/**
-	 * 成功或异常消息
-	 */
-	private final String message;
-	/**
-	 * 成功或异常数据
-	 */
-	private T data;
+		private final int code;
+		private final String status;
+		private final String message;
+		private T data;
 
 	public AuthResponse(final String message) {
 		this.code = AuthResponseCode.SC_AUTHC_SUCCESS.getCode();

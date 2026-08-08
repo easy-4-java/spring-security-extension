@@ -23,8 +23,12 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.util.Date;
 
 /**
- * Captcha Resolver From Session 
+ * A {@link CaptchaResolver} implementation that stores and validates captchas
+ * using HTTP session attributes.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see CaptchaResolver
  */
 public class SessionCaptchaResolver implements CaptchaResolver {
 

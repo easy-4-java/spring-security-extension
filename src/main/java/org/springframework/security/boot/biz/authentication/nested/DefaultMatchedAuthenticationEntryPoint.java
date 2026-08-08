@@ -20,8 +20,13 @@ import org.springframework.security.boot.biz.utils.SubjectUtils;
 import org.springframework.security.core.AuthenticationException;
 
 /**
- * Default Matched Authentication Entry Point
+ * Default implementation of {@link MatchedAuthenticationEntryPoint} that supports
+ * common authentication exceptions such as method-not-supported, captcha errors,
+ * and token-related errors.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see MatchedAuthenticationEntryPoint
  */
 public class DefaultMatchedAuthenticationEntryPoint implements MatchedAuthenticationEntryPoint {
 

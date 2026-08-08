@@ -26,6 +26,12 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
+/**
+ * Configuration properties for logout behavior.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ */
 public class SecurityLogoutProperties {
 
 	/** 注销地址：会话注销后的重定向地址 */

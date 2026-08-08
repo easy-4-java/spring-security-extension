@@ -4,23 +4,17 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
- * Rest 模式登录认证绑定的参数对象Model
+ * Data transfer object for REST-mode login requests, carrying the username, password,
+ * and optional captcha fields. Supports JSON deserialization via Jackson annotations.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
  */
 public class PostLoginRequest {
 	
-	/**
-	 * 认证账号（必选）
-	 */
-    private String username;
-    /**
-   	 * 认证密码（必选）
-   	 */
-    private String password;
-    /**
-   	 * 验证码（可选）
-   	 */
-    private String captcha;
+	    private String username;
+        private String password;
+        private String captcha;
 	
     @JsonCreator
     public PostLoginRequest(@JsonProperty("username") String username, @JsonProperty("password") String password, @JsonProperty("captcha") String captcha) {

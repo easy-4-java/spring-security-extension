@@ -16,9 +16,15 @@ import java.io.IOException;
 import java.util.List;
 
 /**
- * Post认证请求成功后的处理实现
- * 
+ * Authentication success handler that supports both REST (JSON response) and browser-based
+ * (redirect) success scenarios. Notifies registered listeners and delegates to matched
+ * {@link org.springframework.security.boot.biz.authentication.nested.MatchedAuthenticationSuccessHandler}
+ * instances for REST requests.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see org.springframework.security.web.authentication.SavedRequestAwareAuthenticationSuccessHandler
+ * @see AuthenticationListener
  */
 public class PostRequestAuthenticationSuccessHandler extends SavedRequestAwareAuthenticationSuccessHandler {
 

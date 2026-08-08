@@ -19,8 +19,14 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * PostOnly Authentication Processing Filter
+ * Abstract authentication processing filter that enforces HTTP POST-only requests.
+ * Non-POST requests are rejected with an {@link org.springframework.security.boot.biz.exception.AuthenticationMethodNotSupportedException}
+ * when the {@code postOnly} flag is enabled (default: true).
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see AuthenticationProcessingFilter
+ * @see PostRequestAuthenticationProcessingFilter
  */
 public abstract class PostOnlyAuthenticationProcessingFilter extends AuthenticationProcessingFilter {
 
