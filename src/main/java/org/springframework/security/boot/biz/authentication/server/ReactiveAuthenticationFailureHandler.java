@@ -26,6 +26,12 @@ import reactor.core.publisher.Mono;
 
 import java.util.List;
 
+/**
+ * Reactive authentication failure handler interface for WebFlux security.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ */
 public class ReactiveAuthenticationFailureHandler implements ServerAuthenticationFailureHandler {
 
 	private List<MatchedServerAuthenticationFailureHandler> failureHandlers;

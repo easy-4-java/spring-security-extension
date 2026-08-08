@@ -20,6 +20,12 @@ import reactor.core.publisher.Mono;
 import java.nio.charset.StandardCharsets;
 
 
+/**
+ * Reactive access denied handler interface for WebFlux security.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ */
 public class ReactiveServerAccessDeniedHandler implements ServerAccessDeniedHandler {
 	
 	protected Logger logger = LoggerFactory.getLogger(getClass());

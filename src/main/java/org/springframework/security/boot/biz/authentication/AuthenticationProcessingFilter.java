@@ -18,8 +18,14 @@ import java.io.IOException;
 import java.util.Objects;
 
 /**
- * Authentication Processing Filter
+ * Abstract authentication processing filter that extracts client metadata (UID, sign,
+ * geolocation, app info) from HTTP headers and sets up the request context before
+ * delegating to subclass implementations of {@link #doAttemptAuthentication}.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter
+ * @see PostOnlyAuthenticationProcessingFilter
  */
 public abstract class AuthenticationProcessingFilter extends AbstractAuthenticationProcessingFilter {
 

@@ -20,38 +20,25 @@ import org.springframework.security.core.GrantedAuthority;
 import java.util.Collection;
 
 @SuppressWarnings("serial")
+/**
+ * Abstract base class for authentication tokens that carry additional client metadata
+ * such as user ID, application ID, channel, version, signature, and geolocation.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see org.springframework.security.authentication.AbstractAuthenticationToken
+ */
 public class AbstractAuthenticationToken extends org.springframework.security.authentication.AbstractAuthenticationToken {
     
     private final Object principal;
     private Object credentials;
-    /**
-	 * 登录的用户UID
-	 */
-	private String uid;
-	/**
-	 * 登录的客户端应用ID
-	 */
-	private String appId;
-	/**
-	 * 登录的客户端应用渠道编码
-	 */
-	private String appChannel;
-	/**
-	 *登录的客户端版本
-	 */
-	private String appVersion;
-	/**
-	 * 请求参数签名（可选）
-	 */
-	private String sign;
-	/**
-	 * 用户最新经度（可选）
-	 */
-	private double longitude;
-	/**
-	 * 用户最新纬度（可选）
-	 */
-	private double latitude;
+    	private String uid;
+		private String appId;
+		private String appChannel;
+		private String appVersion;
+		private String sign;
+		private double longitude;
+		private double latitude;
 
     public AbstractAuthenticationToken(Object principal) {
         super(null);

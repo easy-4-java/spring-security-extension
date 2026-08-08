@@ -1,5 +1,12 @@
 package org.springframework.security.boot.biz.exception;
 
+/**
+ * Constants class holding authentication-related string constants used across the security extension.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see org.springframework.security.core.AuthenticationException
+ */
 public class AuthConstants {
 
 	public static final String UID = "uid";

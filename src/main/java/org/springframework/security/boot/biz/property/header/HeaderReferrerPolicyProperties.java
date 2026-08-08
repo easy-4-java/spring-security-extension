@@ -27,6 +27,12 @@ import org.springframework.security.web.header.writers.ReferrerPolicyHeaderWrite
 @Getter
 @Setter
 @ToString
+/**
+ * Configuration properties for the Referrer-Policy security header.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ */
 public class HeaderReferrerPolicyProperties {
 
 	/**

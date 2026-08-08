@@ -26,6 +26,12 @@ import static org.apache.commons.lang3.StringUtils.EMPTY;
  * @author [@Loong Wan](https://github.com/loong10k)
  */
 @SuppressWarnings("unchecked")
+/**
+ * Utility class for accessing the current Spring Security authentication context.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ */
 public class SubjectUtils {
 
 	public static final Function<Object, Long> TO_LONG = member -> {
@@ -223,13 +229,7 @@ public class SubjectUtils {
 		return false;
 	}
 
-	/**
-	 * 登陆成功后重新生成session【基于安全考虑】
-	 * @param request {@link HttpServletRequest} instance
-	 * @param oldSession Old {@link jakarta.servlet.http.HttpSession} instance
-	 * @return {@link jakarta.servlet.http.HttpSession} instance
-	 */
-	public static HttpSession copySession(HttpServletRequest request, HttpSession oldSession) {
+		public static HttpSession copySession(HttpServletRequest request, HttpSession oldSession) {
 		Map<String, Object> attributes = new LinkedHashMap<String, Object>();
 
 		Enumeration<String> keys = oldSession.getAttributeNames();

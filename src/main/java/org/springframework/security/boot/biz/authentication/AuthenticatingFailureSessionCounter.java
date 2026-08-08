@@ -22,8 +22,12 @@ import jakarta.servlet.ServletResponse;
 import jakarta.servlet.http.HttpServletRequest;
 
 /**
- * Authenticating Failure Counter On Session 
+ * An {@link AuthenticatingFailureCounter} implementation that stores and retrieves
+ * the authentication failure count in the HTTP session.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see AuthenticatingFailureCounter
  */
 public class AuthenticatingFailureSessionCounter implements AuthenticatingFailureCounter {
 

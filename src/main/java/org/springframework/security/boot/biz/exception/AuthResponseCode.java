@@ -1,9 +1,10 @@
 package org.springframework.security.boot.biz.exception;
 
 /**
- * Enumeration of response code.
- * 
+ * Enum of authentication response codes with associated message keys.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
  */
 public enum AuthResponseCode {
 

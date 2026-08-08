@@ -20,8 +20,10 @@ import org.apache.commons.lang3.StringUtils;
 import jakarta.servlet.http.HttpServletRequest;
 
 /**
- * http://blog.csdn.net/caoshuming_500/article/details/20952329
+ * Utility class for extracting the remote client IP address from HTTP requests, supporting proxy headers.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
  */
 public class RemoteAddrUtils {
 

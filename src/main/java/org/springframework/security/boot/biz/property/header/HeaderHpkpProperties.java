@@ -29,6 +29,12 @@ import java.util.Map;
 @Getter
 @Setter
 @ToString
+/**
+ * Configuration properties for the HTTP Public Key Pinning (HPKP) security header.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ */
 public class HeaderHpkpProperties {
 
 	/**

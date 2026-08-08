@@ -29,6 +29,12 @@ import java.util.Map;
 @Getter
 @Setter
 @ToString
+/**
+ * Configuration properties for CORS header settings.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ */
 public class SecurityHeaderCorsProperties {
 
 	/** Wildcard representing <em>all</em> origins, methods, or headers. */
