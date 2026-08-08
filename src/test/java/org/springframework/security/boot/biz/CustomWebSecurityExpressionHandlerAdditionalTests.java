@@ -1,6 +1,6 @@
 package org.springframework.security.boot.biz;
 
-import jakarta.servlet.FilterChain;
+import javax.servlet.FilterChain;
 import org.junit.jupiter.api.Test;
 import org.springframework.security.access.expression.SecurityExpressionOperations;
 import org.springframework.security.authentication.AuthenticationTrustResolverImpl;

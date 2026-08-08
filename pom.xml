@@ -186,6 +186,13 @@
                 <version>${spring-boot-starter-data-redis.version}</version>
                 <scope>provided</scope>
             </dependency>
+            <!-- For Spring Data Redis -->
+            <dependency>
+                <groupId>org.springframework.data</groupId>
+                <artifactId>spring-data-redis</artifactId>
+                <version>${spring-boot-starter-data-redis.version}</version>
+                <scope>provided</scope>
+            </dependency>
             <!-- For Commons Lang3 -->
             <dependency>
                 <groupId>org.apache.commons</groupId>
@@ -280,8 +287,8 @@
         </dependency>
         <!-- For Spring Boot -->
         <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-redis</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
             <scope>provided</scope>
         </dependency>
         <!-- For Commons Collections4 -->
@@ -335,6 +342,27 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <!-- For Spring Test (MockHttpServletRequest, etc.) -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${spring-framework.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- For Mockito -->
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>4.11.0</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- For Reactor Test -->
+        <dependency>
+            <groupId>io.projectreactor</groupId>
+            <artifactId>reactor-test</artifactId>
+            <version>3.4.38</version>
             <scope>test</scope>
         </dependency>
     </dependencies>

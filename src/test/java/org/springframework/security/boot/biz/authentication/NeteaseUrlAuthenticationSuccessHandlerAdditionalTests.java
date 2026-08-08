@@ -5,7 +5,7 @@ import org.springframework.mock.web.MockHttpServletRequest;
 import org.springframework.mock.web.MockHttpServletResponse;
 import org.springframework.security.boot.biz.filter.HttpParamsFilter;
 
-import jakarta.servlet.http.HttpSession;
+import javax.servlet.http.HttpSession;
 
 import static org.junit.jupiter.api.Assertions.*;
 

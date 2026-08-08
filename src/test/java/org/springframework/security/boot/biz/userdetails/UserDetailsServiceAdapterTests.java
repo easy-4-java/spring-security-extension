@@ -16,7 +16,7 @@ class UserDetailsServiceAdapterTests {
             }
         };
         Authentication auth = new UsernamePasswordAuthenticationToken("testuser", "pass");
-        var details = adapter.loadUserDetails(auth);
+        org.springframework.security.core.userdetails.UserDetails details = adapter.loadUserDetails(auth);
         assertNotNull(details);
         assertEquals("testuser", details.getUsername());
     }
@@ -64,7 +64,7 @@ class UserDetailsServiceAdapterTests {
                 return new org.springframework.security.core.userdetails.User(username, "", java.util.Collections.emptyList());
             }
         };
-        var details = adapter.loadUserByUsername("test");
+        org.springframework.security.core.userdetails.UserDetails details = adapter.loadUserByUsername("test");
         assertNotNull(details);
         assertEquals("test", details.getUsername());
     }

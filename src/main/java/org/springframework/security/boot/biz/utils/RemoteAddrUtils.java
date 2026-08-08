@@ -17,7 +17,7 @@ package org.springframework.security.boot.biz.utils;
 
 import org.apache.commons.lang3.StringUtils;
 
-import jakarta.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * Utility class for extracting the remote client IP address from HTTP requests, supporting proxy headers.

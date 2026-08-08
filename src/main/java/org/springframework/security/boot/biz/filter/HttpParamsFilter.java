@@ -15,10 +15,10 @@
  */
 package org.springframework.security.boot.biz.filter;
 
-import jakarta.servlet.*;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
-import jakarta.servlet.http.HttpSession;
+import javax.servlet.*;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
@@ -26,7 +26,7 @@ import java.io.IOException;
  *
  * @author [@Loong Wan](https://github.com/loong10k)
  * @since 3.0.0
- * @see jakarta.servlet.Filter
+ * @see javax.servlet.Filter
  */
 public class HttpParamsFilter implements Filter {
     public static String REQUESTED_URL = "CasRequestedUrl";

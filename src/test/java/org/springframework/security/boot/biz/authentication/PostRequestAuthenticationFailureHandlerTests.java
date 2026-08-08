@@ -72,8 +72,8 @@ class PostRequestAuthenticationFailureHandlerTests {
     @Test void shouldNotifyListenersOnFailure() throws Exception {
         final boolean[] called = {false};
         AuthenticationListener listener = new AuthenticationListener() {
-            public void onSuccess(jakarta.servlet.http.HttpServletRequest req, jakarta.servlet.http.HttpServletResponse res, org.springframework.security.core.Authentication auth) {}
-            public void onFailure(jakarta.servlet.http.HttpServletRequest req, jakarta.servlet.http.HttpServletResponse res, org.springframework.security.core.AuthenticationException ae) { called[0] = true; }
+            public void onSuccess(javax.servlet.http.HttpServletRequest req, javax.servlet.http.HttpServletResponse res, org.springframework.security.core.Authentication auth) {}
+            public void onFailure(javax.servlet.http.HttpServletRequest req, javax.servlet.http.HttpServletResponse res, org.springframework.security.core.AuthenticationException ae) { called[0] = true; }
         };
         List<AuthenticationListener> listeners = new ArrayList<>();
         listeners.add(listener);

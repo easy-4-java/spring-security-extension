@@ -1,7 +1,7 @@
 package org.springframework.security.boot.biz;
 
-import jakarta.servlet.FilterChain;
-import jakarta.servlet.ServletException;
+import javax.servlet.FilterChain;
+import javax.servlet.ServletException;
 import org.junit.jupiter.api.Test;
 import org.springframework.mock.web.MockHttpServletRequest;
 import org.springframework.mock.web.MockHttpServletResponse;

@@ -12,8 +12,8 @@ class AuthenticationProcessingFilterTests {
         public TestAuthenticationProcessingFilter(String url) { super(url); }
         public TestAuthenticationProcessingFilter() { super(new AntPathRequestMatcher("/test")); }
         public org.springframework.security.core.Authentication doAttemptAuthentication(
-                jakarta.servlet.http.HttpServletRequest request,
-                jakarta.servlet.http.HttpServletResponse response) { return null; }
+                javax.servlet.http.HttpServletRequest request,
+                javax.servlet.http.HttpServletResponse response) { return null; }
     }
 
     @Test void shouldHaveDefaultConstants() {

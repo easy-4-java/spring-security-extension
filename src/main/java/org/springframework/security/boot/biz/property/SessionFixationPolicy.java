@@ -15,7 +15,7 @@
  */
 package org.springframework.security.boot.biz.property;
 
-import jakarta.servlet.http.HttpSession;
+import javax.servlet.http.HttpSession;
 
 /**
  * Enum defining session fixation protection policies (migrateSession, newSession, none).

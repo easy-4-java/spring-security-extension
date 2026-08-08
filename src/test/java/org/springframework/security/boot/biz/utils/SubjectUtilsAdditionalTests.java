@@ -48,10 +48,10 @@ class SubjectUtilsAdditionalTests {
         MockHttpServletRequest req = new MockHttpServletRequest();
         MockHttpServletResponse res = new MockHttpServletResponse();
         RequestContextHolder.setRequestAttributes(new ServletRequestAttributes(req, res));
-        jakarta.servlet.http.HttpSession oldSession = req.getSession();
+        javax.servlet.http.HttpSession oldSession = req.getSession();
         oldSession.setAttribute("key1", "value1");
         oldSession.setAttribute("key2", "value2");
-        jakarta.servlet.http.HttpSession newSession = SubjectUtils.copySession(req, oldSession);
+        javax.servlet.http.HttpSession newSession = SubjectUtils.copySession(req, oldSession);
         assertNotNull(newSession);
         assertEquals("value1", newSession.getAttribute("key1"));
         assertEquals("value2", newSession.getAttribute("key2"));

@@ -11,7 +11,7 @@ import java.util.Arrays;
  *
  * @author [@Loong Wan](https://github.com/loong10k)
  * @since 3.0.0
- * @see jakarta.servlet.Filter
+ * @see javax.servlet.Filter
  */
 public class CustomCorsFilter extends CorsFilter {
 

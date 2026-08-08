@@ -19,9 +19,9 @@ import org.springframework.security.boot.biz.filter.HttpParamsFilter;
 import org.springframework.security.boot.biz.utils.StringUtils;
 import org.springframework.security.web.authentication.SimpleUrlAuthenticationSuccessHandler;
 
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
-import jakarta.servlet.http.HttpSession;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  * Custom URL-based authentication success handler that determines the target URL by checking:
