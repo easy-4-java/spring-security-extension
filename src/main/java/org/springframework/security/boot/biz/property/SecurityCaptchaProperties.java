@@ -27,6 +27,12 @@ import org.springframework.security.boot.biz.authentication.PostRequestAuthentic
 @Getter
 @Setter
 @ToString
+/**
+ * Configuration properties for captcha settings.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ */
 public class SecurityCaptchaProperties {
 
 	public static final String DEFAULT_SESSION_CAPTCHA_KEY = "KAPTCHA_SESSION_KEY";

@@ -27,6 +27,12 @@ import org.springframework.security.boot.biz.property.header.*;
 @Getter
 @Setter
 @ToString
+/**
+ * Configuration properties for HTTP security headers.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ */
 public class SecurityHeadersProperties {
 
 	/**

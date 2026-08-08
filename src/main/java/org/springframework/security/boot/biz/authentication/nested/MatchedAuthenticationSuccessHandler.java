@@ -24,8 +24,12 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * TODO
+ * Strategy interface for authentication success handlers that handle specific types of
+ * authentication tokens. Implementations declare which authentication types they support
+ * and provide custom success handling logic.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
  */
 public interface MatchedAuthenticationSuccessHandler {
 

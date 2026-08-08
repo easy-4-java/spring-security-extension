@@ -21,10 +21,11 @@ import org.springframework.http.HttpRequest;
 import org.springframework.http.server.reactive.ServerHttpRequest;
 
 /**
- * TODO
+ * Utility class for WebFlux-specific operations.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
  */
-
 public class WebfluxUtils {
 
 	private static final String XML_HTTP_REQUEST = "XMLHttpRequest";

@@ -19,8 +19,14 @@ import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
 
 /**
- * Post Request Authentication Provider
+ * Authentication provider that authenticates {@link org.springframework.security.authentication.UsernamePasswordAuthenticationToken}
+ * instances by loading user details and verifying the password. Performs user status checks
+ * after successful password verification.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see org.springframework.security.authentication.AuthenticationProvider
+ * @see org.springframework.security.boot.biz.userdetails.UserDetailsServiceAdapter
  */
 public class PostRequestAuthenticationProvider implements AuthenticationProvider {
 	

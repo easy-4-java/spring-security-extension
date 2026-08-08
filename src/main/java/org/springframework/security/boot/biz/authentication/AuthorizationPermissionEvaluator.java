@@ -25,9 +25,13 @@ import java.io.Serializable;
 import java.util.Collection;
 
 /**
- * TODO
- * 
+ * A {@link org.springframework.security.access.PermissionEvaluator} that checks whether the
+ * current authentication holds a specific granted authority. Supports wildcard permission "*"
+ * which always grants access.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see org.springframework.security.access.PermissionEvaluator
  */
 public class AuthorizationPermissionEvaluator implements PermissionEvaluator {
 	
@@ -47,10 +51,7 @@ public class AuthorizationPermissionEvaluator implements PermissionEvaluator {
 		return false;
 	}
 	
-	/**
-	   *  简单的字符串比较，相同则认为有权限
-	 */
-	@Override
+		@Override
 	public boolean hasPermission(Authentication authentication, Serializable targetId, String targetType,
 			Object permission) {
 		if (StringUtils.equalsIgnoreCase(ALL, permission.toString())) {

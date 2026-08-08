@@ -16,8 +16,10 @@
 package org.springframework.security.boot.biz.utils;
 
 /**
- * Spring StringUtils 扩展
+ * Utility class extending Apache Commons StringUtils with additional text processing methods.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
  */
 public class StringUtils extends org.springframework.util.StringUtils {
 

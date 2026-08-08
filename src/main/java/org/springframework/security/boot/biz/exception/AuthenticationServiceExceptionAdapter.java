@@ -2,11 +2,14 @@ package org.springframework.security.boot.biz.exception;
 
 import org.springframework.security.authentication.AuthenticationServiceException;
 
-/**
- *  认证服务端异常
- * @author [@Loong Wan](https://github.com/loong10k)
- */
 @SuppressWarnings("serial")
+/**
+ * Adapter class for authentication service exceptions that carries an API response code.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see org.springframework.security.core.AuthenticationException
+ */
 public abstract class AuthenticationServiceExceptionAdapter extends AuthenticationServiceException {
 
 	private final int code;

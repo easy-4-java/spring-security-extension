@@ -19,8 +19,13 @@ import jakarta.servlet.ServletRequest;
 import jakarta.servlet.ServletResponse;
 
 /**
- * Authenticating Failure Counter
+ * Strategy interface for tracking and incrementing authentication failure counts.
+ * Implementations may store the count in the HTTP request, session, or other storage.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see AuthenticatingFailureRequestCounter
+ * @see AuthenticatingFailureSessionCounter
  */
 public interface AuthenticatingFailureCounter {
 

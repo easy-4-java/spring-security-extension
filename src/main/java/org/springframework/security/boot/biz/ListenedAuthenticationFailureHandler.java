@@ -11,8 +11,14 @@ import java.io.IOException;
 import java.util.List;
 
 /**
- * 认证请求失败后的处理实现
+ * Authentication failure handler that notifies registered {@link AuthenticationListener}s
+ * when an authentication failure occurs, then delegates to the parent
+ * {@link org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler}.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler
+ * @see AuthenticationListener
  */
 public class ListenedAuthenticationFailureHandler extends SimpleUrlAuthenticationFailureHandler {
 	

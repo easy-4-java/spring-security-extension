@@ -19,13 +19,15 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-/**
- * TODO
- * @author [@Loong Wan](https://github.com/loong10k)
- */
 @Getter
 @Setter
 @ToString
+/**
+ * Configuration properties for the authentication entry point.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ */
 public class SecurityEntryPointProperties {
 
 	private boolean forceHttps = false;

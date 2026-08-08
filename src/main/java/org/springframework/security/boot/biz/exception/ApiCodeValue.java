@@ -1,5 +1,11 @@
 package org.springframework.security.boot.biz.exception;
 
+/**
+ * Constants interface defining API response code values for authentication and authorization scenarios.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ */
 public interface ApiCodeValue {
 
 	// API Code 200（成功）

@@ -26,6 +26,12 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
+/**
+ * Configuration properties for the X-Frame-Options security header.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ */
 public class HeaderFrameOptionsProperties {
 
 	/**

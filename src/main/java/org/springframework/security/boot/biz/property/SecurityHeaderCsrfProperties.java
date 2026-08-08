@@ -29,6 +29,12 @@ import jakarta.servlet.http.HttpServletRequest;
 @Getter
 @Setter
 @ToString
+/**
+ * Configuration properties for CSRF protection settings.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ */
 public class SecurityHeaderCsrfProperties {
 
 	/**

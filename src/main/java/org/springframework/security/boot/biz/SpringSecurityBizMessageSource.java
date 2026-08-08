@@ -19,8 +19,13 @@ import org.springframework.context.support.MessageSourceAccessor;
 import org.springframework.context.support.ResourceBundleMessageSource;
 
 /**
- * TODO
+ * A {@link org.springframework.context.support.ResourceBundleMessageSource} that loads
+ * business-level security messages from the classpath resource bundle named
+ * {@code org.springframework.security.boot.biz.messages}.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see org.springframework.context.support.ResourceBundleMessageSource
  */
 public class SpringSecurityBizMessageSource extends ResourceBundleMessageSource {
 	

@@ -20,8 +20,13 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.util.Date;
 
 /**
- * Captcha Resolver
+ * Strategy interface for captcha resolution. Implementations provide captcha validation
+ * and storage mechanisms (e.g. session-based, Redis-based).
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see NullCaptchaResolver
+ * @see SessionCaptchaResolver
  */
 public interface CaptchaResolver {
 

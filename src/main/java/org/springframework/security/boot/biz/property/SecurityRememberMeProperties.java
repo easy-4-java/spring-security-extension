@@ -22,6 +22,12 @@ import lombok.Data;
  * @author [@Loong Wan](https://github.com/loong10k)
  */
 @Data
+/**
+ * Configuration properties for remember-me authentication.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ */
 public class SecurityRememberMeProperties {
 
 	/**

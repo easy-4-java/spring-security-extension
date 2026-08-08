@@ -27,6 +27,12 @@ import org.springframework.security.web.header.writers.FeaturePolicyHeaderWriter
 @Getter
 @Setter
 @ToString
+/**
+ * Configuration properties for the Feature-Policy security header.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ */
 public class HeaderFeaturePolicyProperties {
 
 	/**

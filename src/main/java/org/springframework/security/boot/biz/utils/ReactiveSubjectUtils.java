@@ -6,8 +6,10 @@ import org.springframework.security.core.context.SecurityContext;
 import reactor.core.publisher.Mono;
 
 /**
- * Reactive Subject Utils
+ * Utility class for accessing the current security context in reactive (WebFlux) applications.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
  */
 public class ReactiveSubjectUtils {
 
@@ -43,12 +45,7 @@ public class ReactiveSubjectUtils {
 				.block();
 	}
 
-	/**
-	 * 检查target类型对是否是给出对象类型数组中任意一个的类型的子类或者子接口
-	 * @param target 目标类
-	 * @param classes 类
-	 */
-	public static boolean isAssignableFrom(Class<?> target, Class<?> ... classes) {
+		public static boolean isAssignableFrom(Class<?> target, Class<?> ... classes) {
 		if(target != null && classes != null) {
 			for (Class<?> clazz : classes) {
 				/*

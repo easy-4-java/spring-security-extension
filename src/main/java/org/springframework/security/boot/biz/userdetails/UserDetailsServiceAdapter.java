@@ -23,8 +23,10 @@ import org.springframework.security.core.userdetails.UserDetailsPasswordService;
 import org.springframework.security.core.userdetails.UserDetailsService;
 
 /**
- * UserDetailsService Adapter
+ * Adapter interface for loading user details, supporting authentication-token-based lookups.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
  */
 public abstract class UserDetailsServiceAdapter implements UserDetailsService, UserDetailsPasswordService, AuthenticationUserDetailsService<Authentication> {
 

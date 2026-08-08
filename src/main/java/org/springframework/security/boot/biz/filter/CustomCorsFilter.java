@@ -7,11 +7,11 @@ import org.springframework.web.filter.CorsFilter;
 import java.util.Arrays;
 
 /**
- * CustomCorsFilter
- * 
- * @author vladimir.stankovic
+ * A servlet filter that applies CORS (Cross-Origin Resource Sharing) headers based on configurable properties.
  *
- * Aug 3, 2016
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see jakarta.servlet.Filter
  */
 public class CustomCorsFilter extends CorsFilter {
 

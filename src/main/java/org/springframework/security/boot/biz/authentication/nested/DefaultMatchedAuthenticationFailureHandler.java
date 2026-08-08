@@ -5,8 +5,13 @@ import org.springframework.security.boot.biz.utils.SubjectUtils;
 import org.springframework.security.core.AuthenticationException;
 
 /**
- * Post认证请求失败后的处理实现
+ * Default implementation of {@link MatchedAuthenticationFailureHandler} that supports
+ * common authentication exceptions such as method-not-supported, captcha errors,
+ * and token-related errors.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see MatchedAuthenticationFailureHandler
  */
 public class DefaultMatchedAuthenticationFailureHandler  implements MatchedAuthenticationFailureHandler {
 

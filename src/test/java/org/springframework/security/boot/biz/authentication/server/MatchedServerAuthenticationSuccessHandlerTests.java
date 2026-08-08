@@ -1,0 +1,41 @@
+package org.springframework.security.boot.biz.authentication.server;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.server.reactive.ServerHttpRequest;
+import org.springframework.http.server.reactive.ServerHttpResponse;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.web.server.WebFilterExchange;
+import org.springframework.core.io.buffer.DefaultDataBufferFactory;
+import org.springframework.web.server.ServerWebExchange;
+import reactor.core.publisher.Mono;
+import reactor.test.StepVerifier;
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.*;
+
+class MatchedServerAuthenticationSuccessHandlerTests {
+
+    @Test void shouldSupportAndHandleSuccess() {
+        MatchedServerAuthenticationSuccessHandler h = a -> true;
+        Authentication auth = new UsernamePasswordAuthenticationToken("u", "p");
+        assertTrue(h.supports(auth));
+
+        ServerWebExchange exchange = mock(ServerWebExchange.class);
+        ServerHttpRequest request = mock(ServerHttpRequest.class);
+        ServerHttpResponse response = mock(ServerHttpResponse.class);
+        HttpHeaders headers = new HttpHeaders();
+        when(exchange.getRequest()).thenReturn(request);
+        when(exchange.getResponse()).thenReturn(response);
+        when(response.getHeaders()).thenReturn(headers);
+        when(response.bufferFactory()).thenReturn(new DefaultDataBufferFactory());
+        when(response.writeWith(any())).thenReturn(Mono.empty());
+
+        WebFilterExchange wfExchange = mock(WebFilterExchange.class);
+        when(wfExchange.getExchange()).thenReturn(exchange);
+
+        StepVerifier.create(h.onAuthenticationSuccess(wfExchange, auth))
+                .verifyComplete();
+    }
+}

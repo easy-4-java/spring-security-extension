@@ -20,8 +20,12 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.util.Date;
 
 /**
- * Null Captcha Resolver
+ * A no-op {@link CaptchaResolver} implementation that always validates successfully.
+ * Useful when captcha verification is not required.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see CaptchaResolver
  */
 public class NullCaptchaResolver implements CaptchaResolver {
 

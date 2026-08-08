@@ -11,8 +11,14 @@ import java.io.IOException;
 import java.util.List;
 
 /**
- * 认证请求成功后的处理实现
+ * Authentication success handler that notifies registered {@link AuthenticationListener}s
+ * when an authentication success occurs, then delegates to the parent
+ * {@link org.springframework.security.web.authentication.SimpleUrlAuthenticationSuccessHandler}.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see org.springframework.security.web.authentication.SimpleUrlAuthenticationSuccessHandler
+ * @see AuthenticationListener
  */
 public class ListenedAuthenticationSuccessHandler extends SimpleUrlAuthenticationSuccessHandler {
 	

@@ -8,6 +8,16 @@ import org.springframework.security.web.FilterInvocation;
 import org.springframework.security.web.access.expression.DefaultWebSecurityExpressionHandler;
 import org.springframework.security.web.access.expression.WebSecurityExpressionRoot;
 
+/**
+ * Custom implementation of {@link org.springframework.security.web.access.expression.DefaultWebSecurityExpressionHandler}
+ * that creates {@link CustomWebSecurityExpressionRoot} instances for evaluating
+ * web security expressions with extended IP address matching support.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see org.springframework.security.web.access.expression.DefaultWebSecurityExpressionHandler
+ * @see CustomWebSecurityExpressionRoot
+ */
 public class CustomWebSecurityExpressionHandler extends DefaultWebSecurityExpressionHandler {
 
     private AuthenticationTrustResolver trustResolver = new AuthenticationTrustResolverImpl();

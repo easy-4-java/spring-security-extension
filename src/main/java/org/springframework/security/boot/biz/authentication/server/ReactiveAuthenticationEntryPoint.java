@@ -31,8 +31,10 @@ import reactor.core.publisher.Mono;
 import java.util.List;
 
 /**
- * Post Request Authentication Entry Point
+ * Reactive authentication entry point interface for WebFlux security.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
  */
 public class ReactiveAuthenticationEntryPoint implements ServerAuthenticationEntryPoint {
 

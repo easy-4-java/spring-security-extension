@@ -24,8 +24,17 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 
 /**
- * Netease Url Authentication Success Handler
+ * Custom URL-based authentication success handler that determines the target URL by checking:
+ * <ol>
+ *   <li>The always-use-default flag</li>
+ *   <li>A request parameter</li>
+ *   <li>A session attribute ({@code REQUESTED_URL})</li>
+ *   <li>The configured default URL</li>
+ * </ol>
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see org.springframework.security.web.authentication.SimpleUrlAuthenticationSuccessHandler
  */
 public class NeteaseUrlAuthenticationSuccessHandler extends SimpleUrlAuthenticationSuccessHandler {
 

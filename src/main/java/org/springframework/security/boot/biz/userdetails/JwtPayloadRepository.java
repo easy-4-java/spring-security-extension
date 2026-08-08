@@ -22,8 +22,10 @@ import org.springframework.security.core.AuthenticationException;
 import java.util.Map;
 
 /**
- * Abstract JSON Web Token (JWT) Payload Repository
+ * Strategy interface for extracting user details from JWT token payloads.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
  */
 public interface JwtPayloadRepository {
 
