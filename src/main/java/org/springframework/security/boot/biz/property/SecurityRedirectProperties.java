@@ -23,7 +23,7 @@ import java.util.*;
 
 /**
  * Security Redirect Properties
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 @Getter
 @Setter
@@ -31,7 +31,7 @@ import java.util.*;
 /**
  * Configuration properties for redirect behavior.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  */
 public class SecurityRedirectProperties {

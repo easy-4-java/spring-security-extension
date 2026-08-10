@@ -24,7 +24,7 @@ import java.util.Map;
 
 /**
  * Header Hpkp Properties
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 @Getter
 @Setter
@@ -32,7 +32,7 @@ import java.util.Map;
 /**
  * Configuration properties for the HTTP Public Key Pinning (HPKP) security header.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  */
 public class HeaderHpkpProperties {

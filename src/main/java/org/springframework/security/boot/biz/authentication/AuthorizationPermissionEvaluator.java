@@ -29,7 +29,7 @@ import java.util.Collection;
  * current authentication holds a specific granted authority. Supports wildcard permission "*"
  * which always grants access.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see org.springframework.security.access.PermissionEvaluator
  */

@@ -24,7 +24,7 @@ import java.io.IOException;
 /**
  * A servlet filter that captures and stores HTTP request parameters and the requested URL for later use.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see jakarta.servlet.Filter
  */

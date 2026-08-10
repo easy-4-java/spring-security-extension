@@ -22,7 +22,7 @@ import jakarta.servlet.http.HttpServletRequest;
 /**
  * Utility class for extracting the remote client IP address from HTTP requests, supporting proxy headers.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  */
 public class RemoteAddrUtils {
@@ -35,7 +35,7 @@ public class RemoteAddrUtils {
 	/**
 	 * 
 	 * 获取请求客户端IP地址，支持代理服务器
-	 * @author [@Loong Wan](https://github.com/loong10k)
+	 * @author <a href="https://github.com/loong10k">Loong Wan</a>
 	 * @param request the HttpServletRequest
 	 * @return the Remote Addr
 	 */

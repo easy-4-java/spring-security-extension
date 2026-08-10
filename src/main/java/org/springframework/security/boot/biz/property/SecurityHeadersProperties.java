@@ -22,7 +22,7 @@ import org.springframework.security.boot.biz.property.header.*;
 
 /**
  * Security Headers Properties
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 @Getter
 @Setter
@@ -30,7 +30,7 @@ import org.springframework.security.boot.biz.property.header.*;
 /**
  * Configuration properties for HTTP security headers.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  */
 public class SecurityHeadersProperties {

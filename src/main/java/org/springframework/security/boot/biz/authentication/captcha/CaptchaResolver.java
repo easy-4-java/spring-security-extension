@@ -23,7 +23,7 @@ import java.util.Date;
  * Strategy interface for captcha resolution. Implementations provide captcha validation
  * and storage mechanisms (e.g. session-based, Redis-based).
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see NullCaptchaResolver
  * @see SessionCaptchaResolver

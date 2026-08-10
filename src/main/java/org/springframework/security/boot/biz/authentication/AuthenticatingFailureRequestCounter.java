@@ -27,7 +27,7 @@ import jakarta.servlet.http.HttpServletRequest;
  * from an HTTP request parameter. The {@code increment()} method is a no-op since
  * the count is managed client-side via request parameters.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see AuthenticatingFailureCounter
  */

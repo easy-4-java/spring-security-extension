@@ -13,7 +13,7 @@ import org.springframework.security.web.access.expression.WebSecurityExpressionR
  * that creates {@link CustomWebSecurityExpressionRoot} instances for evaluating
  * web security expressions with extended IP address matching support.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see org.springframework.security.web.access.expression.DefaultWebSecurityExpressionHandler
  * @see CustomWebSecurityExpressionRoot

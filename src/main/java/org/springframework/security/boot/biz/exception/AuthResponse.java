@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * Generic authentication response wrapper that encapsulates API response codes and messages.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see org.springframework.security.core.AuthenticationException
  */

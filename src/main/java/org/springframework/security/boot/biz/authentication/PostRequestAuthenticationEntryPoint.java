@@ -37,7 +37,7 @@ import java.util.List;
  * instances or writes a JSON error response. For browser requests, it falls back to
  * the parent {@link org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint}.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint
  * @see org.springframework.security.boot.biz.authentication.nested.MatchedAuthenticationEntryPoint

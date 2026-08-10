@@ -8,7 +8,7 @@ import org.springframework.security.core.AuthenticationException;
  * Default implementation of {@link MatchedServerAuthenticationFailureHandler} for reactive
  * (WebFlux) applications. Supports common authentication exceptions.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see MatchedServerAuthenticationFailureHandler
  */

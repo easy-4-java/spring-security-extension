@@ -21,7 +21,7 @@ import java.nio.charset.StandardCharsets;
 /**
  * Reactive logout success handler interface for WebFlux security.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  */
 public class ReactiveServerLogoutSuccessHandler implements ServerLogoutSuccessHandler {

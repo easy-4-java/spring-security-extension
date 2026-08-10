@@ -17,13 +17,13 @@ package org.springframework.security.boot.biz.exception;
 
 /**
  * Authentication Captcha Expired Exception
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 @SuppressWarnings("serial")
 /**
  * Exception thrown when a captcha has expired during authentication.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see org.springframework.security.core.AuthenticationException
  */

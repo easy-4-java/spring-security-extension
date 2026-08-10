@@ -16,7 +16,7 @@ import java.util.List;
  * A redirect strategy that only redirects to trusted URLs matching configured Ant-style patterns.
  * If the target URL is not trusted, redirects to a configurable default URL instead.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see org.springframework.security.web.DefaultRedirectStrategy
  * @see org.springframework.util.AntPathMatcher

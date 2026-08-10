@@ -6,7 +6,7 @@ import org.springframework.security.authentication.AuthenticationServiceExceptio
 /**
  * Adapter class for authentication service exceptions that carries an API response code.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see org.springframework.security.core.AuthenticationException
  */

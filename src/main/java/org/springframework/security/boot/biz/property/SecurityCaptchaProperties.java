@@ -22,7 +22,7 @@ import org.springframework.security.boot.biz.authentication.PostRequestAuthentic
 
 /**
  * Security Captcha Properties
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 @Getter
 @Setter
@@ -30,7 +30,7 @@ import org.springframework.security.boot.biz.authentication.PostRequestAuthentic
 /**
  * Configuration properties for captcha settings.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  */
 public class SecurityCaptchaProperties {

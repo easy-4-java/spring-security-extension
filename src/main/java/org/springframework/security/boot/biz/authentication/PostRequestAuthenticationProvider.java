@@ -23,7 +23,7 @@ import org.springframework.util.StringUtils;
  * instances by loading user details and verifying the password. Performs user status checks
  * after successful password verification.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see org.springframework.security.authentication.AuthenticationProvider
  * @see org.springframework.security.boot.biz.userdetails.UserDetailsServiceAdapter
@@ -44,7 +44,7 @@ public class PostRequestAuthenticationProvider implements AuthenticationProvider
     /**
      * 
      * <p>完成匹配Token的认证，这里返回的对象最终会通过：SecurityContextHolder.getContext().setAuthentication(authResult); 放置在上下文中</p>
-     * @author [@Loong Wan](https://github.com/loong10k)
+     * @author <a href="https://github.com/loong10k">Loong Wan</a>
      * @param authentication  {@link UsernamePasswordAuthenticationToken} 对象
      * @return 认证结果{@link Authentication}对象
      * @throws AuthenticationException 认证失败会抛出异常

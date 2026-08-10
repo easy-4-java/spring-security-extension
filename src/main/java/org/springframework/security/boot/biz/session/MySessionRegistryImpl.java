@@ -33,7 +33,7 @@ import java.util.concurrent.CopyOnWriteArraySet;
 /**
  * Custom implementation of the session registry for tracking active sessions.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  */
 public class MySessionRegistryImpl implements SessionRegistry, ApplicationListener<SessionDestroyedEvent> {

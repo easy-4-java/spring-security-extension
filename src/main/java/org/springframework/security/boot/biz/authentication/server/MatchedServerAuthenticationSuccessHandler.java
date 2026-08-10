@@ -28,7 +28,7 @@ import reactor.core.publisher.Mono;
  * Strategy interface for server authentication success handlers in reactive applications
  * that handle specific types of authentication.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  */
 public interface MatchedServerAuthenticationSuccessHandler {
@@ -37,7 +37,7 @@ public interface MatchedServerAuthenticationSuccessHandler {
 	
 	/**
 	 * Whether it is supported
-	 * @author [@Loong Wan](https://github.com/loong10k)
+	 * @author <a href="https://github.com/loong10k">Loong Wan</a>
 	 * @param authentication  the authentication
 	 * @return true or false
 	 */

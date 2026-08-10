@@ -23,13 +23,13 @@ import static org.apache.commons.lang3.StringUtils.EMPTY;
 
 /**
  * Subject Utils
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 @SuppressWarnings("unchecked")
 /**
  * Utility class for accessing the current Spring Security authentication context.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  */
 public class SubjectUtils {

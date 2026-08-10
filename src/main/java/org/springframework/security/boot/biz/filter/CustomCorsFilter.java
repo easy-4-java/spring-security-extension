@@ -9,7 +9,7 @@ import java.util.Arrays;
 /**
  * A servlet filter that applies CORS (Cross-Origin Resource Sharing) headers based on configurable properties.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see jakarta.servlet.Filter
  */

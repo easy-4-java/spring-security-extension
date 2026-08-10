@@ -34,7 +34,7 @@ import java.util.List;
 /**
  * Custom implementation of concurrent session control that limits the number of sessions per principal.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  */
 public class MyConcurrentSessionControlAuthenticationStrategy extends ConcurrentSessionControlAuthenticationStrategy {

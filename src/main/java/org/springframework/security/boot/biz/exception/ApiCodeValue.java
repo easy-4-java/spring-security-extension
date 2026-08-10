@@ -3,7 +3,7 @@ package org.springframework.security.boot.biz.exception;
 /**
  * Constants interface defining API response code values for authentication and authorization scenarios.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  */
 public interface ApiCodeValue {

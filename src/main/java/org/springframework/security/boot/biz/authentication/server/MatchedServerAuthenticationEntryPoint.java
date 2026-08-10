@@ -26,7 +26,7 @@ import reactor.core.publisher.Mono;
  * Strategy interface for server authentication entry points in reactive applications
  * that handle specific types of authentication exceptions.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see DefaultMatchedServerAuthenticationEntryPoint
  */
@@ -34,7 +34,7 @@ public interface MatchedServerAuthenticationEntryPoint {
 	
 	/**
 	 * Whether it is supported
-	 * @author [@Loong Wan](https://github.com/loong10k)
+	 * @author <a href="https://github.com/loong10k">Loong Wan</a>
 	 * @param e  the authentication exception
 	 * @return true or false
 	 */

@@ -27,7 +27,7 @@ import java.util.*;
 /**
  * Data transfer object representing user profile information extracted from JWT or other sources.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  */
 public class UserProfilePayload {

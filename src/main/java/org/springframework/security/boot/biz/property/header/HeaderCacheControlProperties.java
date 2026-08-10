@@ -21,7 +21,7 @@ import lombok.ToString;
 
 /**
  * Header Cache Control Properties
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 @Getter
 @Setter
@@ -29,7 +29,7 @@ import lombok.ToString;
 /**
  * Configuration properties for the Cache-Control security header.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  */
 public class HeaderCacheControlProperties {

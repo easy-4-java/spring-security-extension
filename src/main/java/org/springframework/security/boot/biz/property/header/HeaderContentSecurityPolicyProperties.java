@@ -22,7 +22,7 @@ import org.springframework.security.web.header.writers.ContentSecurityPolicyHead
 
 /**
  * Header Content Security Policy Properties
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 @Getter
 @Setter
@@ -30,7 +30,7 @@ import org.springframework.security.web.header.writers.ContentSecurityPolicyHead
 /**
  * Configuration properties for the Content-Security-Policy security header.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  */
 public class HeaderContentSecurityPolicyProperties {

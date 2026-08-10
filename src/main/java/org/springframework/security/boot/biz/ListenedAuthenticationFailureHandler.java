@@ -15,7 +15,7 @@ import java.util.List;
  * when an authentication failure occurs, then delegates to the parent
  * {@link org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler}.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler
  * @see AuthenticationListener

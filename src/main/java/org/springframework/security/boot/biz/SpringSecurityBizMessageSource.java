@@ -23,7 +23,7 @@ import org.springframework.context.support.ResourceBundleMessageSource;
  * business-level security messages from the classpath resource bundle named
  * {@code org.springframework.security.boot.biz.messages}.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see org.springframework.context.support.ResourceBundleMessageSource
  */

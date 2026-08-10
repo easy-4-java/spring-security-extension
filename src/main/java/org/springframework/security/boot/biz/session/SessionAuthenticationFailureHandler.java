@@ -20,7 +20,7 @@ import org.springframework.security.web.authentication.AuthenticationFailureHand
 /**
  * Authentication failure handler that manages session-related failure scenarios.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  */
 public interface SessionAuthenticationFailureHandler extends AuthenticationFailureHandler {

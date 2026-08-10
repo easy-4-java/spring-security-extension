@@ -13,13 +13,13 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 /**
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 @SuppressWarnings("serial")
 /**
  * Extended principal object that carries additional security metadata for authenticated users.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  */
 public class SecurityPrincipal extends User implements Cloneable {

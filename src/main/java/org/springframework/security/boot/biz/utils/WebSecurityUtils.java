@@ -45,7 +45,7 @@ import java.util.List;
 /**
  * Utility class for common web security operations.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  */
 public class WebSecurityUtils {

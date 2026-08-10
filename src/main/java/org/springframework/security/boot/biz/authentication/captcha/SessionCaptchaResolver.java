@@ -26,7 +26,7 @@ import java.util.Date;
  * A {@link CaptchaResolver} implementation that stores and validates captchas
  * using HTTP session attributes.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see CaptchaResolver
  */

@@ -25,7 +25,7 @@ import jakarta.servlet.http.HttpServletResponse;
  * A no-op {@link org.springframework.security.web.authentication.logout.LogoutHandler} implementation
  * that ignores logout requests. Useful when logout processing is not required or is handled elsewhere.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see org.springframework.security.web.authentication.logout.LogoutHandler
  */

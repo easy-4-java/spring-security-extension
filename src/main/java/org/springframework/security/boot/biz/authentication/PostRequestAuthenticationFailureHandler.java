@@ -21,7 +21,7 @@ import java.util.List;
  * {@link org.springframework.security.boot.biz.authentication.nested.MatchedAuthenticationFailureHandler}
  * instances for REST requests.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see org.springframework.security.web.authentication.ExceptionMappingAuthenticationFailureHandler
  * @see AuthenticationListener

@@ -8,7 +8,7 @@ import reactor.core.publisher.Mono;
 /**
  * Utility class for accessing the current security context in reactive (WebFlux) applications.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  */
 public class ReactiveSubjectUtils {

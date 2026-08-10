@@ -20,7 +20,7 @@ import jakarta.servlet.http.HttpSession;
 /**
  * Enum defining session fixation protection policies (migrateSession, newSession, none).
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  */
 public enum SessionFixationPolicy {

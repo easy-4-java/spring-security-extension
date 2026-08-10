@@ -24,7 +24,7 @@ import java.util.Map;
 
 /**
  * Security Header Cors Properties
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 @Getter
 @Setter
@@ -32,7 +32,7 @@ import java.util.Map;
 /**
  * Configuration properties for CORS header settings.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  */
 public class SecurityHeaderCorsProperties {

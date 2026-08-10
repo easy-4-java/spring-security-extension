@@ -25,7 +25,7 @@ import jakarta.servlet.http.HttpServletRequest;
  * An {@link AuthenticatingFailureCounter} implementation that stores and retrieves
  * the authentication failure count in the HTTP session.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see AuthenticatingFailureCounter
  */

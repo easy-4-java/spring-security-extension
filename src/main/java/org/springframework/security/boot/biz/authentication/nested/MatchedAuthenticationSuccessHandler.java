@@ -28,14 +28,14 @@ import java.io.IOException;
  * authentication tokens. Implementations declare which authentication types they support
  * and provide custom success handling logic.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  */
 public interface MatchedAuthenticationSuccessHandler {
 
 	/**
 	 * Whether it is supported
-	 * @author [@Loong Wan](https://github.com/loong10k)
+	 * @author <a href="https://github.com/loong10k">Loong Wan</a>
 	 * @param authentication  the authentication
 	 * @return true or false
 	 */

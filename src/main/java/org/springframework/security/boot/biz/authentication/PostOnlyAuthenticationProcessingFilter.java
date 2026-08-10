@@ -23,7 +23,7 @@ import java.io.IOException;
  * Non-POST requests are rejected with an {@link org.springframework.security.boot.biz.exception.AuthenticationMethodNotSupportedException}
  * when the {@code postOnly} flag is enabled (default: true).
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see AuthenticationProcessingFilter
  * @see PostRequestAuthenticationProcessingFilter

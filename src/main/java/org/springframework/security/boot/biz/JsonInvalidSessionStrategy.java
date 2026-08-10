@@ -29,7 +29,7 @@ import java.io.IOException;
  * An {@link org.springframework.security.web.session.InvalidSessionStrategy} that writes a JSON
  * error response when an invalid session is detected, instead of redirecting to a URL.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see org.springframework.security.web.session.InvalidSessionStrategy
  * @see org.springframework.security.boot.biz.exception.AuthResponse

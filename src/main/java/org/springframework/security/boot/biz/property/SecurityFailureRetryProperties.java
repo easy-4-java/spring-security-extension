@@ -23,7 +23,7 @@ import org.springframework.security.boot.biz.authentication.PostRequestAuthentic
 
 /**
  * Security Failure Retry Properties
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 @Getter
 @Setter
@@ -31,7 +31,7 @@ import org.springframework.security.boot.biz.authentication.PostRequestAuthentic
 /**
  * Configuration properties for authentication failure retry limits.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  */
 public class SecurityFailureRetryProperties {

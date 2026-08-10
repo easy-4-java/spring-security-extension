@@ -9,7 +9,7 @@ import org.springframework.security.core.AuthenticationException;
  * common authentication exceptions such as method-not-supported, captcha errors,
  * and token-related errors.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see MatchedAuthenticationFailureHandler
  */

@@ -22,7 +22,7 @@ import org.springframework.security.web.header.writers.FeaturePolicyHeaderWriter
 
 /**
  * Header Feature Policy Properties
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 @Getter
 @Setter
@@ -30,7 +30,7 @@ import org.springframework.security.web.header.writers.FeaturePolicyHeaderWriter
 /**
  * Configuration properties for the Feature-Policy security header.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  */
 public class HeaderFeaturePolicyProperties {

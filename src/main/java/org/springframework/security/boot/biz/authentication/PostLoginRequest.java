@@ -7,7 +7,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  * Data transfer object for REST-mode login requests, carrying the username, password,
  * and optional captcha fields. Supports JSON deserialization via Jackson annotations.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  */
 public class PostLoginRequest {

@@ -24,7 +24,7 @@ import jakarta.servlet.http.HttpServletRequest;
 /**
  * Utility class for HTTP request analysis (e.g. detecting POST/JSON requests).
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  */
 public class WebUtils extends org.springframework.web.util.WebUtils {

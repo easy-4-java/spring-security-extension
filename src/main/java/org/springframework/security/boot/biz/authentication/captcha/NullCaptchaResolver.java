@@ -23,7 +23,7 @@ import java.util.Date;
  * A no-op {@link CaptchaResolver} implementation that always validates successfully.
  * Useful when captcha verification is not required.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see CaptchaResolver
  */

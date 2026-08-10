@@ -22,7 +22,7 @@ import java.util.Objects;
  * geolocation, app info) from HTTP headers and sets up the request context before
  * delegating to subclass implementations of {@link #doAttemptAuthentication}.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter
  * @see PostOnlyAuthenticationProcessingFilter

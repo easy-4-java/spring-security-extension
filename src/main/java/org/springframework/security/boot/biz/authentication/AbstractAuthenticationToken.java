@@ -24,7 +24,7 @@ import java.util.Collection;
  * Abstract base class for authentication tokens that carry additional client metadata
  * such as user ID, application ID, channel, version, signature, and geolocation.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see org.springframework.security.authentication.AbstractAuthenticationToken
  */

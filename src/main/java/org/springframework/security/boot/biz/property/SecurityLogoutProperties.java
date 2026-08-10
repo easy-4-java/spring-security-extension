@@ -21,7 +21,7 @@ import lombok.ToString;
 
 /**
  * Security Logout Properties
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 @Getter
 @Setter
@@ -29,7 +29,7 @@ import lombok.ToString;
 /**
  * Configuration properties for logout behavior.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  */
 public class SecurityLogoutProperties {

@@ -27,7 +27,7 @@ import java.util.Objects;
 /**
  * Utility class for writing security-related JSON responses (success and error) to servlet responses.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  */
 public class SecurityResponseUtils {

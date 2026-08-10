@@ -21,7 +21,7 @@ import lombok.ToString;
 
 /**
  * Header ContentType Options Properties
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 @Getter
 @Setter
@@ -29,7 +29,7 @@ import lombok.ToString;
 /**
  * Configuration properties for the X-Content-Type-Options security header.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  */
 public class HeaderContentTypeOptionsProperties {

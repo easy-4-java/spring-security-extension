@@ -3,7 +3,7 @@ package org.springframework.security.boot.biz.exception;
 /**
  * Constants class holding authentication-related string constants used across the security extension.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see org.springframework.security.core.AuthenticationException
  */

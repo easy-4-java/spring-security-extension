@@ -2,13 +2,13 @@ package org.springframework.security.boot.biz.exception;
 
 /**
  * Authentication Token Invalid Exception
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 @SuppressWarnings("serial")
 /**
  * Exception thrown when an authentication token is invalid.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see org.springframework.security.core.AuthenticationException
  */

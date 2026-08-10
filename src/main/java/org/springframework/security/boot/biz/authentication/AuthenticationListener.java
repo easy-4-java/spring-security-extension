@@ -25,7 +25,7 @@ import jakarta.servlet.http.HttpServletResponse;
  * Listener interface for authentication lifecycle events. Implementations are notified
  * when an authentication attempt succeeds or fails.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  */
 public interface AuthenticationListener {
