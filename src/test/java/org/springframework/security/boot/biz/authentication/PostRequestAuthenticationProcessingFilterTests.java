@@ -1,6 +1,7 @@
 package org.springframework.security.boot.biz.authentication;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
+import tools.jackson.databind.ObjectMapper;
+import tools.jackson.databind.json.JsonMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.security.boot.biz.authentication.captcha.NullCaptchaResolver;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
@@ -11,13 +12,13 @@ class PostRequestAuthenticationProcessingFilterTests {
 
     @Test void shouldCreateWithObjectMapper() {
         PostRequestAuthenticationProcessingFilter filter =
-                new PostRequestAuthenticationProcessingFilter(new ObjectMapper());
+                new PostRequestAuthenticationProcessingFilter(new JsonMapper());
         assertNotNull(filter);
     }
 
     @Test void shouldCreateWithObjectMapperAndMatcher() {
         PostRequestAuthenticationProcessingFilter filter =
-                new PostRequestAuthenticationProcessingFilter(new ObjectMapper(), new AntPathRequestMatcher("/auth"));
+                new PostRequestAuthenticationProcessingFilter(new JsonMapper(), new AntPathRequestMatcher("/auth"));
         assertNotNull(filter);
     }
 
@@ -30,33 +31,33 @@ class PostRequestAuthenticationProcessingFilterTests {
 
     @Test void shouldSetAndGetUsernameParameter() {
         PostRequestAuthenticationProcessingFilter filter =
-                new PostRequestAuthenticationProcessingFilter(new ObjectMapper());
+                new PostRequestAuthenticationProcessingFilter(new JsonMapper());
         filter.setUsernameParameter("user");
         assertEquals("user", filter.getUsernameParameter());
     }
 
     @Test void shouldSetAndGetPasswordParameter() {
         PostRequestAuthenticationProcessingFilter filter =
-                new PostRequestAuthenticationProcessingFilter(new ObjectMapper());
+                new PostRequestAuthenticationProcessingFilter(new JsonMapper());
         filter.setPasswordParameter("pass");
         assertEquals("pass", filter.getPasswordParameter());
     }
 
     @Test void shouldRejectEmptyUsernameParameter() {
         PostRequestAuthenticationProcessingFilter filter =
-                new PostRequestAuthenticationProcessingFilter(new ObjectMapper());
+                new PostRequestAuthenticationProcessingFilter(new JsonMapper());
         assertThrows(IllegalArgumentException.class, () -> filter.setUsernameParameter(""));
     }
 
     @Test void shouldRejectEmptyPasswordParameter() {
         PostRequestAuthenticationProcessingFilter filter =
-                new PostRequestAuthenticationProcessingFilter(new ObjectMapper());
+                new PostRequestAuthenticationProcessingFilter(new JsonMapper());
         assertThrows(IllegalArgumentException.class, () -> filter.setPasswordParameter(""));
     }
 
     @Test void shouldSetAndGetCaptchaRequired() {
         PostRequestAuthenticationProcessingFilter filter =
-                new PostRequestAuthenticationProcessingFilter(new ObjectMapper());
+                new PostRequestAuthenticationProcessingFilter(new JsonMapper());
         assertFalse(filter.isCaptchaRequired());
         filter.setCaptchaRequired(true);
         assertTrue(filter.isCaptchaRequired());
@@ -64,7 +65,7 @@ class PostRequestAuthenticationProcessingFilterTests {
 
     @Test void shouldSetAndGetCaptchaResolver() {
         PostRequestAuthenticationProcessingFilter filter =
-                new PostRequestAuthenticationProcessingFilter(new ObjectMapper());
+                new PostRequestAuthenticationProcessingFilter(new JsonMapper());
         NullCaptchaResolver resolver = new NullCaptchaResolver();
         filter.setCaptchaResolver(resolver);
         assertSame(resolver, filter.getCaptchaResolver());
@@ -72,14 +73,14 @@ class PostRequestAuthenticationProcessingFilterTests {
 
     @Test void shouldSetAndGetCaptchaParameter() {
         PostRequestAuthenticationProcessingFilter filter =
-                new PostRequestAuthenticationProcessingFilter(new ObjectMapper());
+                new PostRequestAuthenticationProcessingFilter(new JsonMapper());
         filter.setCaptchaParameter("cap");
         assertEquals("cap", filter.getCaptchaParameter());
     }
 
     @Test void shouldSetAndGetFailureCounter() {
         PostRequestAuthenticationProcessingFilter filter =
-                new PostRequestAuthenticationProcessingFilter(new ObjectMapper());
+                new PostRequestAuthenticationProcessingFilter(new JsonMapper());
         AuthenticatingFailureRequestCounter counter = new AuthenticatingFailureRequestCounter();
         filter.setFailureCounter(counter);
         assertSame(counter, filter.getFailureCounter());
@@ -87,28 +88,28 @@ class PostRequestAuthenticationProcessingFilterTests {
 
     @Test void shouldSetAndGetRetryTimesKeyAttribute() {
         PostRequestAuthenticationProcessingFilter filter =
-                new PostRequestAuthenticationProcessingFilter(new ObjectMapper());
+                new PostRequestAuthenticationProcessingFilter(new JsonMapper());
         filter.setRetryTimesKeyAttribute("custom");
         assertEquals("custom", filter.getRetryTimesKeyAttribute());
     }
 
     @Test void shouldSetAndGetRetryTimesWhenAccessDenied() {
         PostRequestAuthenticationProcessingFilter filter =
-                new PostRequestAuthenticationProcessingFilter(new ObjectMapper());
+                new PostRequestAuthenticationProcessingFilter(new JsonMapper());
         filter.setRetryTimesWhenAccessDenied(5);
         assertEquals(5, filter.getRetryTimesWhenAccessDenied());
     }
 
     @Test void shouldSetAndGetPostOnly() {
         PostRequestAuthenticationProcessingFilter filter =
-                new PostRequestAuthenticationProcessingFilter(new ObjectMapper());
+                new PostRequestAuthenticationProcessingFilter(new JsonMapper());
         assertTrue(filter.isPostOnly());
         filter.setPostOnly(false);
         assertFalse(filter.isPostOnly());
     }
 
     @Test void shouldGetObjectMapper() {
-        ObjectMapper mapper = new ObjectMapper();
+        ObjectMapper mapper = new JsonMapper();
         PostRequestAuthenticationProcessingFilter filter =
                 new PostRequestAuthenticationProcessingFilter(mapper);
         assertSame(mapper, filter.getObjectMapper());
@@ -116,13 +117,13 @@ class PostRequestAuthenticationProcessingFilterTests {
 
     @Test void shouldHaveDefaultRetryTimes() {
         PostRequestAuthenticationProcessingFilter filter =
-                new PostRequestAuthenticationProcessingFilter(new ObjectMapper());
+                new PostRequestAuthenticationProcessingFilter(new JsonMapper());
         assertEquals(3, filter.getRetryTimesWhenAccessDenied());
     }
 
     @Test void shouldHaveDefaultRetryTimesKeyAttribute() {
         PostRequestAuthenticationProcessingFilter filter =
-                new PostRequestAuthenticationProcessingFilter(new ObjectMapper());
+                new PostRequestAuthenticationProcessingFilter(new JsonMapper());
         assertEquals("securityLoginFailureRetries", filter.getRetryTimesKeyAttribute());
     }
 }

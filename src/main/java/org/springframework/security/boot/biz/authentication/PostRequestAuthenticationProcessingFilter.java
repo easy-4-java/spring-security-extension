@@ -1,8 +1,8 @@
 package org.springframework.security.boot.biz.authentication;
 
-import com.fasterxml.jackson.core.JsonParseException;
-import com.fasterxml.jackson.databind.JsonMappingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import tools.jackson.core.JacksonException;
+import tools.jackson.databind.ObjectMapper;
+import tools.jackson.databind.json.JsonMapper;
 import org.springframework.context.support.MessageSourceAccessor;
 import org.springframework.security.authentication.AbstractAuthenticationToken;
 import org.springframework.security.authentication.InternalAuthenticationServiceException;
@@ -58,7 +58,7 @@ public class PostRequestAuthenticationProcessingFilter extends PostOnlyAuthentic
 	/** Maximum number of retry to login . */
 	private int retryTimesWhenAccessDenied = 3;
 	
-	private ObjectMapper objectMapper = new ObjectMapper();
+	private ObjectMapper objectMapper = new JsonMapper();
 	private AuthenticatingFailureCounter failureCounter;
 	
 	// ~ Constructors
@@ -159,9 +159,7 @@ public class PostRequestAuthenticationProcessingFilter extends PostOnlyAuthentic
 
 			return this.getAuthenticationManager().authenticate(authRequest);
 
-		} catch (JsonParseException e) {
-			throw new InternalAuthenticationServiceException(e.getMessage());
-		} catch (JsonMappingException e) {
+		} catch (JacksonException e) {
 			throw new InternalAuthenticationServiceException(e.getMessage());
 		} catch (IOException e) {
 			throw new InternalAuthenticationServiceException(e.getMessage());
