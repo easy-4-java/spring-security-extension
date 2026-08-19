@@ -105,7 +105,9 @@ public class SecurityAuthcProperties {
 	private SecurityEntryPointProperties entryPoint = new SecurityEntryPointProperties();
 
 	private SecurityRedirectProperties redirect = new SecurityRedirectProperties();
-	
+
+	private SecuritySessionMgtProperties sessionMgt = new SecuritySessionMgtProperties();
+
 	/**
 	 * If this property is set, the current request will be checked for this a parameter
 	 * with this name and the value used as the target URL if present.
