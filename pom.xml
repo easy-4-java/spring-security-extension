@@ -76,9 +76,7 @@
             <maven-release-plugin.version>3.3.1</maven-release-plugin.version>
             <maven-resources-plugin.version>3.5.0</maven-resources-plugin.version>
             <maven-source-plugin.version>3.4.0</maven-source-plugin.version>
-            <maven-surefire-plugin.version>3.5.2</maven-surefire-plugin.version>
-            <javax-servlet-api.version>4.0.1</javax-servlet-api.version>
-    </properties>
+            <maven-surefire-plugin.version>3.5.2</maven-surefire-plugin.version>    </properties>
 
     
     <dependencyManagement>
@@ -219,16 +217,7 @@
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
                 <scope>provided</scope>
-            </dependency>
-                <!-- javax.servlet-api (optional, for spring-security-extension2 compatibility) -->
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>4.0.1</version>
-            <optional>true</optional>
-            <scope>provided</scope>
-        </dependency>
-    </dependencies>
+            </dependency>    </dependencies>
     </dependencyManagement>
 
     
