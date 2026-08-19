@@ -89,7 +89,7 @@ public class MyConcurrentSessionControlAuthenticationStrategy extends Concurrent
                 do {
                     if(!var5.hasNext()) {
                         leastRecentlyUsed.expireNow();
-                        ((MySessionRegistryImpl)sessionRegistry).addSessionInfo(leastRecentlyUsed.getSessionId(),leastRecentlyUsed);
+                        
                         return;
                     }
 

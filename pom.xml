@@ -509,12 +509,13 @@
                     <configuration>
                         <skip>false</skip>
                         <skipTests>false</skipTests>
-                        <argLine>-Xmx1024m -Dfile.encoding=UTF-8</argLine>
+                        <argLine>${argLine} -Xmx1024m -Dfile.encoding=UTF-8</argLine>
                         <additionalClasspathElements>
                             <additionalClasspathElement>${basedir}/target/test-classes</additionalClasspathElement>
                         </additionalClasspathElements>
                         <includes>
                             <include>**/*Tests.java</include>
+                            <include>**/*Test.java</include>
                         </includes>
                         <excludes>
                             <exclude>**/TestBean.java</exclude>
