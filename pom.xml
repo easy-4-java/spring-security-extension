@@ -349,23 +349,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    <!-- 构建 Profile 配置 -->
-    <profiles>
-        <profile>
-            <id>disable-javadoc-doclint</id>
-            <activation>
-                <jdk>[9,)</jdk>
-            </activation>
-            <properties>
-                <!-- Dependency versions -->
-                <additionalparam>-Xdoclint:none -Xlint:unchecked</additionalparam>
-            </properties>
-        </profile>
-        <!-- 发布到 Maven Central Portal：mvn -Prelease deploy（GPG 签名 + 源码 + Javadoc + Central 发布插件） -->
-        <profile>
-            <id>release</id>
-        </profile>
-    </profiles>
     <!-- 制品发布仓库配置（distributionManagement） -->
     <distributionManagement>
         <repository>
@@ -658,4 +641,21 @@
             </plugin>
         </plugins>
     </build>
+    <!-- 构建 Profile 配置 -->
+    <profiles>
+        <profile>
+            <id>disable-javadoc-doclint</id>
+            <activation>
+                <jdk>[9,)</jdk>
+            </activation>
+            <properties>
+                <!-- Dependency versions -->
+                <additionalparam>-Xdoclint:none -Xlint:unchecked</additionalparam>
+            </properties>
+        </profile>
+        <!-- 发布到 Maven Central Portal：mvn -Prelease deploy（GPG 签名 + 源码 + Javadoc + Central 发布插件） -->
+        <profile>
+            <id>release</id>
+        </profile>
+    </profiles>
 </project>
