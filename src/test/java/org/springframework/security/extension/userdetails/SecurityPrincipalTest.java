@@ -191,7 +191,7 @@ class SecurityPrincipalTest {
     void shouldSetAndGetProfile() {
         SecurityPrincipal p = new SecurityPrincipal("u", "p", "R");
         assertNotNull(p.getProfile());
-        Map<String, Object> profile = Map.of("key", "val");
+        Map<String, Object> profile = new java.util.HashMap<>(); profile.put("key", "val");
         p.setProfile(profile);
         assertEquals("val", p.getProfile().get("key"));
     }
