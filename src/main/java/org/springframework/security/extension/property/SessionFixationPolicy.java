@@ -15,7 +15,7 @@
  */
 package org.springframework.security.extension.property;
 
-import jakarta.servlet.http.HttpSession;
+import javax.servlet.http.HttpSession;
 
 /**
  * Strategy that describes how the security framework should mitigate
@@ -29,7 +29,7 @@ import jakarta.servlet.http.HttpSession;
  *
  * @author [@Loong Wan](https://github.com/loong10k)
  * @since 3.0.0
- * @see jakarta.servlet.http.HttpSession
+ * @see javax.servlet.http.HttpSession
  */
 public enum SessionFixationPolicy {
 

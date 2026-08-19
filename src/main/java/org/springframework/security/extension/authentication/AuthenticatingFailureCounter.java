@@ -15,8 +15,8 @@
  */
 package org.springframework.security.extension.authentication;
 
-import jakarta.servlet.ServletRequest;
-import jakarta.servlet.ServletResponse;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
 
 /**
  * SPI used by the easy-4-java security stack to track the number of failed

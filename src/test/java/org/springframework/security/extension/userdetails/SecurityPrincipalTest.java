@@ -32,7 +32,7 @@ class SecurityPrincipalTest {
 
     @Test
     void shouldCreateWithAuthoritiesCollection() {
-        Collection<SimpleGrantedAuthority> authorities = List.of(new SimpleGrantedAuthority("ROLE_USER"));
+        Collection<SimpleGrantedAuthority> authorities = Arrays.asList(new SimpleGrantedAuthority("ROLE_USER"));
         SecurityPrincipal p = new SecurityPrincipal("charlie", "pw", authorities);
         assertEquals(1, p.getAuthorities().size());
         assertTrue(p.getAuthorities().contains(new SimpleGrantedAuthority("ROLE_USER")));
@@ -40,7 +40,7 @@ class SecurityPrincipalTest {
 
     @Test
     void shouldCreateWithAccountStatusFlags() {
-        Collection<SimpleGrantedAuthority> authorities = List.of(new SimpleGrantedAuthority("ROLE_USER"));
+        Collection<SimpleGrantedAuthority> authorities = Arrays.asList(new SimpleGrantedAuthority("ROLE_USER"));
         SecurityPrincipal p = new SecurityPrincipal("dave", "pw", true, true, true, false, authorities);
         assertTrue(p.isEnabled());
         assertTrue(p.isAccountNonExpired());
@@ -173,7 +173,7 @@ class SecurityPrincipalTest {
     void shouldSetAndGetRoles() {
         SecurityPrincipal p = new SecurityPrincipal("u", "p", "R");
         assertNull(p.getRoles());
-        List<RolePair> roles = List.of(new RolePair("1", "admin", "Admin"));
+        List<RolePair> roles = Arrays.asList(new RolePair("1", "admin", "Admin"));
         p.setRoles(roles);
         assertEquals(1, p.getRoles().size());
     }
@@ -215,7 +215,7 @@ class SecurityPrincipalTest {
     @Test
     void shouldBeAdminWhenRkeyIsAdmin() {
         SecurityPrincipal p = new SecurityPrincipal("u", "p", "R");
-        p.setRoles(List.of(new RolePair("1", "user", "User")));
+        p.setRoles(Arrays.asList(new RolePair("1", "user", "User")));
         p.setRkey("admin");
         assertTrue(p.isAdmin());
     }
@@ -223,7 +223,7 @@ class SecurityPrincipalTest {
     @Test
     void shouldBeAdminWhenRkeyIsAdminCaseInsensitive() {
         SecurityPrincipal p = new SecurityPrincipal("u", "p", "R");
-        p.setRoles(List.of(new RolePair("1", "user", "User")));
+        p.setRoles(Arrays.asList(new RolePair("1", "user", "User")));
         p.setRkey("ADMIN");
         assertTrue(p.isAdmin());
     }
@@ -231,7 +231,7 @@ class SecurityPrincipalTest {
     @Test
     void shouldBeAdminWhenRidIsAdmin() {
         SecurityPrincipal p = new SecurityPrincipal("u", "p", "R");
-        p.setRoles(List.of(new RolePair("1", "user", "User")));
+        p.setRoles(Arrays.asList(new RolePair("1", "user", "User")));
         p.setRid("admin");
         assertTrue(p.isAdmin());
     }
@@ -239,7 +239,7 @@ class SecurityPrincipalTest {
     @Test
     void shouldNotBeAdminWhenRkeyAndRidAreNotAdmin() {
         SecurityPrincipal p = new SecurityPrincipal("u", "p", "R");
-        p.setRoles(List.of(new RolePair("1", "user", "User")));
+        p.setRoles(Arrays.asList(new RolePair("1", "user", "User")));
         p.setRkey("user");
         p.setRid("2");
         assertFalse(p.isAdmin());
@@ -272,14 +272,14 @@ class SecurityPrincipalTest {
     @Test
     void shouldReturnTrueForHasRoleWhenRoleMatches() {
         SecurityPrincipal p = new SecurityPrincipal("u", "p", "R");
-        p.setRoles(List.of(new RolePair("1", "admin", "Admin")));
+        p.setRoles(Arrays.asList(new RolePair("1", "admin", "Admin")));
         assertTrue(p.hasRole("admin"));
     }
 
     @Test
     void shouldReturnTrueForHasRoleCaseInsensitive() {
         SecurityPrincipal p = new SecurityPrincipal("u", "p", "R");
-        p.setRoles(List.of(new RolePair("1", "admin", "Admin")));
+        p.setRoles(Arrays.asList(new RolePair("1", "admin", "Admin")));
         assertTrue(p.hasRole("ADMIN"));
         assertTrue(p.hasRole("Admin"));
     }
@@ -287,7 +287,7 @@ class SecurityPrincipalTest {
     @Test
     void shouldReturnFalseForHasRoleWhenRoleDoesNotMatch() {
         SecurityPrincipal p = new SecurityPrincipal("u", "p", "R");
-        p.setRoles(List.of(new RolePair("1", "user", "User")));
+        p.setRoles(Arrays.asList(new RolePair("1", "user", "User")));
         assertFalse(p.hasRole("admin"));
     }
 
@@ -318,7 +318,7 @@ class SecurityPrincipalTest {
     void shouldReturnFalseForHasAnyRoleDueToTypeMismatch() {
         // CollectionUtils.containsAny compares RolePair with String, which never matches
         SecurityPrincipal p = new SecurityPrincipal("u", "p", "R");
-        p.setRoles(List.of(new RolePair("1", "admin", "Admin")));
+        p.setRoles(Arrays.asList(new RolePair("1", "admin", "Admin")));
         assertFalse(p.hasAnyRole("admin"));
     }
 
@@ -419,7 +419,7 @@ class SecurityPrincipalTest {
         Set<String> perms = new HashSet<>(Arrays.asList("read", "write"));
         p.setPerms(perms);
 
-        List<RolePair> roles = List.of(new RolePair("1", "admin", "Admin"));
+        List<RolePair> roles = Arrays.asList(new RolePair("1", "admin", "Admin"));
         p.setRoles(roles);
 
         UserProfilePayload payload = p.toPayload();
