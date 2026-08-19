@@ -234,7 +234,15 @@
                 <version>${junit-jupiter.version}</version>
                 <scope>test</scope>
             </dependency>
-        </dependencies>
+                <!-- javax.servlet-api (optional, for merged spring-security-extension2 classes) -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
+            <optional>true</optional>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
     </dependencyManagement>
 
     <!-- 项目依赖（dependencies） -->
