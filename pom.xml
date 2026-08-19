@@ -633,9 +633,7 @@
                 <version>${maven-compiler-plugin.version}</version>
                 <configuration>
                     <!-- 源代码编译版本 -->
-                    <source>${java.version}</source>
                     <!-- 目标平台编译版本 -->
-                    <target>${java.version}</target>
                     <!-- 保留方法参数名，支持 Spring MVC 按参数名绑定 -->
                     <parameters>true</parameters>
                     <encoding>${project.build.sourceEncoding}</encoding>
