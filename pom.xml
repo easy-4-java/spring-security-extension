@@ -572,7 +572,6 @@
             </activation>
             <properties>
                 <!-- Dependency versions -->
-                <additionalparam>-Xdoclint:none -Xlint:unchecked</additionalparam>
             </properties>
         </profile>
         <profile>
