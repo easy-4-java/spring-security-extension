@@ -12,7 +12,6 @@ import org.springframework.security.boot.biz.exception.AuthenticationCaptchaInco
 import org.springframework.security.boot.biz.exception.AuthenticationCaptchaNotFoundException;
 import org.springframework.security.boot.biz.exception.AuthenticationOverRetryRemindException;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;

@@ -3,6 +3,7 @@ package org.springframework.security.boot.biz;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.web.access.expression.WebSecurityExpressionRoot;
 import org.springframework.security.web.util.matcher.IpAddressMatcher;
+import org.springframework.util.StringUtils;
 
 import jakarta.servlet.http.HttpServletRequest;
 import java.util.function.Supplier;
@@ -28,8 +29,8 @@ public class CustomWebSecurityExpressionRoot extends WebSecurityExpressionRoot {
     @Override
     public boolean hasIpAddress(String ipAddress) {
         String remoteAddr = request.getRemoteAddr();
-        if (remoteAddr == null) {
-            remoteAddr = "";
+        if (!StringUtils.hasText(remoteAddr)) {
+            return false;
         }
         return (new IpAddressMatcher(ipAddress).matches(remoteAddr));
     }

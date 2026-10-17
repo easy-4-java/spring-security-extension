@@ -4,7 +4,6 @@ import tools.jackson.databind.ObjectMapper;
 import tools.jackson.databind.json.JsonMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.security.boot.biz.authentication.captcha.NullCaptchaResolver;
-import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -18,7 +17,7 @@ class PostRequestAuthenticationProcessingFilterTests {
 
     @Test void shouldCreateWithObjectMapperAndMatcher() {
         PostRequestAuthenticationProcessingFilter filter =
-                new PostRequestAuthenticationProcessingFilter(new JsonMapper(), new AntPathRequestMatcher("/auth"));
+                new PostRequestAuthenticationProcessingFilter(new JsonMapper(), request -> "/auth".equals(request.getServletPath()));
         assertNotNull(filter);
     }
 

@@ -1,7 +1,6 @@
 package org.springframework.security.boot.biz.authentication;
 
 import org.junit.jupiter.api.Test;
-import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -10,7 +9,7 @@ class AuthenticationProcessingFilterTests {
     // Create a concrete subclass for testing
     private static class TestAuthenticationProcessingFilter extends AuthenticationProcessingFilter {
         public TestAuthenticationProcessingFilter(String url) { super(url); }
-        public TestAuthenticationProcessingFilter() { super(new AntPathRequestMatcher("/test")); }
+        public TestAuthenticationProcessingFilter() { super(request -> "/test".equals(request.getServletPath())); }
         public org.springframework.security.core.Authentication doAttemptAuthentication(
                 jakarta.servlet.http.HttpServletRequest request,
                 jakarta.servlet.http.HttpServletResponse response) { return null; }
