@@ -45,6 +45,8 @@ public class SecurityAuthcProperties {
 	private String successUrl = "/index";;
 	/** 异常页面：认证失败时的跳转路径 */
 	private String failureUrl = "/error";
+	/** 拒绝访问时跳转的页面；保留旧 starter 的配置契约。 */
+	private String accessDeniedUrl = "/errors/401";
 	
 	/**
 	 * Indicates if the filter chain should be continued prior to delegation to

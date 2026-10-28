@@ -29,7 +29,7 @@ public class CustomWebSecurityExpressionRoot extends WebSecurityExpressionRoot {
     @Override
     public boolean hasIpAddress(String ipAddress) {
         String remoteAddr = request.getRemoteAddr();
-        if (!StringUtils.hasText(remoteAddr)) {
+        if (Objects.isNull(remoteAddr)) {
             return false;
         }
         return (new IpAddressMatcher(ipAddress).matches(remoteAddr));

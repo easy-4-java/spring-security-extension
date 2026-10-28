@@ -56,7 +56,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <servlet-api.version>6.1.0</servlet-api.version>
         <slf4j.version>2.0.18</slf4j.version>
-        <spring-framework.version>6.2.6</spring-framework.version>
+        <spring-framework.version>7.0.6</spring-framework.version>
         <spring-security.version>7.1.0-M3</spring-security.version>
         <swagger-annotations.version>1.6.4</swagger-annotations.version>
         <!-- Maven Plugin versions -->
